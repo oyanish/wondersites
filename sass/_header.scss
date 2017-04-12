@@ -35,10 +35,11 @@
     &:not(:first-of-type):before {
       content: '';
       width: 2em;
-      border-bottom: 1px solid $color_blue;
+      border-top: 1px solid $color_blue;
       position: absolute;
       left: calc(50% - 1em);
       top: 0;
+
     }
 
     a {
@@ -91,20 +92,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
-  .primary-menu ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    li {
-      padding: 0 .75em;
-      text-align: center;
-    }
-  }
-}
-
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .main-header {
     display: flex;
     flex-direction: row;
