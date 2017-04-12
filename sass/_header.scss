@@ -4,12 +4,13 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 1em;
 }
 
 
 // LOGO STYLING
 .main-header .logo {
-  padding: 1.5em 1em;
+  margin-bottom: 1em;
 
   .slogan {
     color: #fff;
@@ -19,3 +20,96 @@
     text-transform: uppercase;
   }
 }
+
+// MENU STYLING
+.primary-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    position: relative;
+    padding: .75em 0;
+    text-align: center;
+
+    &:before {
+      content: '';
+      width: 2em;
+      border-bottom: 1px solid $color_blue;
+      position: absolute;
+      left: calc(50% - 1em);
+      top: 0;
+    }
+
+    &:first-of-type {
+      &:before {
+        content: none;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #ffffff;
+
+      &:hover {
+        color: #1d8eeb;
+      }
+    }
+
+    &.button-quote {
+      border: 1px solid $color_orange;
+      padding: 1em;
+      border-radius: 6px;
+      margin: 1em auto;
+
+      &:before {
+        content: none;
+      }
+
+      a {
+        color: $color_orange;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 415px) {
+  .primary-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      padding: 0 .75em;
+      text-align: center;
+
+      &:before {
+        content: none;
+
+      }
+
+      &.button-quote {
+        width: 30%
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .primary-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      padding: 0 .75em;
+      text-align: center;
+
+      &:before {
+        content: none;
+      }
+    }
+  }
+}
+
