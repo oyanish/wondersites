@@ -32,19 +32,13 @@
     padding: .75em 0;
     text-align: center;
 
-    &:before {
+    &:not(:first-of-type):before {
       content: '';
       width: 2em;
       border-bottom: 1px solid $color_blue;
       position: absolute;
       left: calc(50% - 1em);
       top: 0;
-    }
-
-    &:first-of-type {
-      &:before {
-        content: none;
-      }
     }
 
     a {
@@ -71,7 +65,6 @@
       }
     }
   }
-
 }
 
 @media screen and (min-width: 415px) {
@@ -84,9 +77,11 @@
       padding: 0 .75em;
       text-align: center;
 
-      &:before {
-        content: none;
-
+      &:not(:first-of-type):not(:last-of-type):before {
+        content: '\2022';
+        color: $color_blue;
+        border: 0;
+        left: -1em;
       }
 
       &.button-quote {
@@ -105,11 +100,26 @@
     li {
       padding: 0 .75em;
       text-align: center;
-
-      &:before {
-        content: none;
-      }
     }
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+
+    .primary-menu ul {
+      align-items: baseline;
+
+      li.button-quote {
+          margin: 0;
+          padding: .5em;
+          width: auto;
+      }
+    }
+  }
+}
