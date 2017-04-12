@@ -1,0 +1,21 @@
+// GENERAL HEADER SETTINGS
+.main-header {
+  background: #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+// LOGO STYLING
+.main-header .logo {
+  padding: 1.5em 1em;
+
+  .slogan {
+    color: #fff;
+    font-size: .6em;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
