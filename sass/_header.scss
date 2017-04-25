@@ -86,13 +86,23 @@
       }
 
       &.button-quote {
-        width: 30%
+        width: auto;
       }
     }
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
+  .main-header {
+    .primary-menu ul {
+      li.button-quote {
+        width: 30%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
   .main-header {
     display: flex;
     flex-direction: row;
