@@ -1,3 +1,5 @@
+//*** HERO BANNER ***//
+
 .hero-banner {
   width: 100%;
   padding-bottom: 60px;
@@ -45,6 +47,8 @@
   }
 }
 
+//*** SERVICES SECTION ***//
+
 .homepage-services-section {
   padding: 1em;
   display: flex;
@@ -57,8 +61,11 @@
     padding-bottom: 1em;
   }
 
-  .container{
-    .col {
+  .container {
+    .service {
+      margin-bottom: 3em;
+      padding: 0 2em;
+
       h1 {
         font-weight: 400;
         font-size: 1.6em;
@@ -72,13 +79,14 @@
       }
 
       p {
-        padding: 1.5em 2.5em;
+        text-align: left;
+        line-height: 1.3em;
+        margin: 2em 0;
       }
 
       button {
         border: 1px solid $color_blue;
         border-radius: 3px;
-        margin-bottom: 3em;
         background: white;
         color: $color_blue;
         padding: .5em 2em;
@@ -90,12 +98,13 @@
   }
 }
 
+ //*** MEDIA QUERIES ***//
+
 @media screen and (min-width: 768px) {
   .banner-logo {
     align-items: baseline;
     width: 90%;
     margin: auto;
-  }
 
     .banner-big-text{
       display: inline-block;
@@ -107,7 +116,43 @@
       width: 50%;
       height: 345px;
     }
+  }
 
+  .homepage-services-section{
+    .container{
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+
+      .service{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: stretch;
+        text-align: left;
+        padding: 0 1em;
+
+        .icon-service {
+          width: auto;
+          height: 80px;
+        }
+
+        h1 {
+          font-size: 1.1em;
+        }
+
+        span {
+          font-size: 1.1em;
+        }
+
+        button {
+          padding: .75em 1em;
+          display: block;
+          align-self: flex-start;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -118,7 +163,17 @@
     }
     .banner-text-button {
       padding: 1em;
-      font-size: 2.5em;
+      font-size: 1.5em;
+    }
+  }
+
+  .homepage-services-section{
+    .container{
+      .service{
+        p{
+          padding-right: 2em;
+        }
+      }
     }
   }
 }
