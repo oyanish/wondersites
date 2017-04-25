@@ -12,12 +12,15 @@
   .banner-logo {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    margin: 1em 0;
-    padding: 0 .5em;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 60%;
+    }
 
     .banner-devices {
-      width: 44%;
+      //width: 44%;
     }
   }
 
@@ -100,31 +103,36 @@
 
  //*** MEDIA QUERIES ***//
 
-@media screen and (min-width: 768px) {
-  .banner-logo {
-    align-items: baseline;
-    width: 90%;
-    margin: auto;
+@media screen and (min-width: 415px) {
+  .hero-banner {
+    .banner-logo {
+      flex-direction: row;
+      justify-content: center;
 
-    .banner-big-text{
-      display: inline-block;
-      height: 375px;
+      img {
+        width: 35%;
+      }
     }
+  }
+}
 
-    .banner-devices {
-      display: inline-block;
-      width: 50%;
-      height: 345px;
+@media screen and (min-width: 768px) {
+
+  .hero-banner {
+    .banner-logo {
+      img {
+        width: 45%;
+      }
     }
   }
 
-  .homepage-services-section{
-    .row{
+  .homepage-services-section {
+    .row {
       display: flex;
       flex-direction: row;
       align-items: baseline;
 
-      .service{
+      .service {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -167,10 +175,10 @@
     }
   }
 
-  .homepage-services-section{
+  .homepage-services-section {
     .row{
-      .service{
-        p{
+      .service {
+        p {
           padding-right: 2em;
         }
       }
