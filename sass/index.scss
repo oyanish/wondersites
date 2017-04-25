@@ -4,3 +4,8 @@ $color_orange: #E67E22;
 
 @import "header";
 @import "home-page";
+
+section .container {
+  max-width: 980px;
+  margin: 0 auto;
+}
