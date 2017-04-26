@@ -101,7 +101,38 @@
   }
 }
 
- //*** MEDIA QUERIES ***//
+
+//*** CLIENT REVIEWS SECTION ***//
+
+.homepage-client-reviews {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1.5em;
+
+  .container {
+    h2 {
+      font-size: 2em;
+      font-weight: 300;
+    }
+
+    .client-review-box {
+      p {
+        font-size: .9em;
+        font-weight: 100;
+        line-height: 1.3;
+
+        &.client-name {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+
+
+//*** MEDIA QUERIES ***//
 
 @media screen and (min-width: 415px) {
   .hero-banner {
@@ -114,7 +145,19 @@
       }
     }
   }
+
+  .homepage-client-reviews {
+    .container {
+      .client-review-box {
+        padding: 0 2em;
+        p{
+          line-height: 1.4;
+        }
+      }
+    }
+  }
 }
+
 
 @media screen and (min-width: 768px) {
 
@@ -161,6 +204,14 @@
       }
     }
   }
+
+  .homepage-client-reviews {
+    .container {
+      .client-review-box {
+        padding: 0 4em;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -181,6 +232,14 @@
         p {
           padding-right: 2em;
         }
+      }
+    }
+  }
+
+  .homepage-client-reviews {
+    .container {
+      .client-review-box {
+        padding: 2em 8em;
       }
     }
   }
