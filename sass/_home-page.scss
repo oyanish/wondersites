@@ -18,10 +18,6 @@
     img {
       width: 60%;
     }
-
-    .banner-devices {
-      //width: 44%;
-    }
   }
 
   .banner-text-button{
@@ -102,7 +98,7 @@
 }
 
 
-//*** CLIENT REVIEWS SECTION ***//
+//*** CLIENT REVIEWS AND LOGOS SECTION ***//
 
 .homepage-client-reviews {
   display: flex;
@@ -130,7 +126,45 @@
   }
 }
 
+.homepage-client-logos {
+  background: $color_grey_light;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+  }
+}
 
+//*** HOMEPAGE CTA ***//
+
+.homepage-cta {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 1em;
+
+    h2 {
+      font-size: 2em;
+      font-weight: 300;
+    }
+
+    .buttons-cta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    button {
+      border: 1px solid $color_blue_light;
+      color: $color_blue_light;
+      border-radius: 3px;
+      background: white;
+      padding: 1em;
+      font-size: 1.2em;
+    }
+  }
+}
 
 //*** MEDIA QUERIES ***//
 
@@ -212,7 +246,22 @@
       }
     }
   }
+
+  .homepage-cta {
+    .container {
+      .buttons-cta {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        button {
+          margin: 2em;
+        }
+      }
+    }
+  }
 }
+
 
 @media screen and (min-width: 1024px) {
   .hero-banner {
