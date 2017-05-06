@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="105px" height="80px" viewBox="0 0 105 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg class="chat-icon" width="105px" height="80px" viewBox="0 0 105 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
     <title>Chat Icon</title>
-    <desc>Created with Sketch.</desc>
+    <desc>wondersites.online.</desc>
     <defs>
         <path d="M31,1.42491319 C13.8785585,1.42491319 0,14.8936632 0,31.5075955 C0,43.3706597 7.07683405,53.6284722 17.3571228,58.5262587 C18.0742903,64.2174479 16.6577158,70.2382812 13.1033143,74.6230469 C19.925641,74.6230469 25.6899768,69.0577257 27.5862614,61.4084201 C28.7074794,61.5275608 29.8461027,61.5907118 31,61.5907118 C48.1203758,61.5907118 62,48.1219618 62,31.5078125 C62.0001776,14.8936632 48.1201982,1.42491319 31,1.42491319 Z" id="path-1"></path>
     </defs>
