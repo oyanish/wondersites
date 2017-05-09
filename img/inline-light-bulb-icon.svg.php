@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="84px" height="83px" viewBox="0 0 84 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg class="icon-service" width="84px" height="83px" viewBox="0 0 84 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
     <title>Light Bulb Icon</title>
-    <desc>Created with Sketch.</desc>
+    <desc>Wondersites online marketing and consulting.</desc>
     <defs></defs>
     <g id="website-deskto" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Desktop" transform="translate(-1136.000000, -1085.000000)">
