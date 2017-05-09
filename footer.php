@@ -1,7 +1,7 @@
 
 		<footer class="main-footer">
 			<?php wp_footer(); ?>
-			<img src="img/wondersites-logo.svg" alt="wondersites web design, development and marketing" class="footer-logo">
+			<img src="img/inline-wondersites-logo.svg.php" alt="wondersites web design, development and marketing" class="footer-logo">
 			<nav class="footer-menu">
 				<ul>
 					<li><a href="#">Services</a></li>
