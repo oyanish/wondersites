@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 348 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg class="banner-big-text" viewBox="0 0 348 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-    <title>stand-out-on-the-web</title>
-    <desc>Created with Sketch.</desc>
+    <title>Stand out on the web</title>
+    <desc>wondersites.online</desc>
     <defs>
         <linearGradient x1="50%" y1="19.5525174%" x2="50%" y2="100%" id="linearGradient-1">
             <stop stop-color="#FEFEFE" stop-opacity="0.0350800225" offset="0%"></stop>
