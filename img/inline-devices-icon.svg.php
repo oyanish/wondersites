@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="105px" height="72px" viewBox="0 0 105 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg class="icon-service" width="105px" height="72px" viewBox="0 0 105 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
     <title>Devices Icon</title>
-    <desc>Created with Sketch.</desc>
+    <desc>Wondersites Web Design and Development.</desc>
     <defs></defs>
     <g id="website-deskto" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Desktop" transform="translate(-341.000000, -1105.000000)">
