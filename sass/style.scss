@@ -16,7 +16,9 @@ $color_orange: #E67E22;
 $color_grey_light: #ECF0F1;
 
 @import "header";
+@import "footer";
 @import "home-page";
+
 
 section .container {
   max-width: 980px;
