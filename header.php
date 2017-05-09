@@ -9,7 +9,7 @@
 	<body>
 		<header class="main-header">
 			<div class="logo">
-				<img src="<?php echo get_template_directory_uri() . '/img/wondersites-logo.svg'?>" alt="wondersites-logo" class="primary-menu-logo">
+				<?php get_template_part( 'img/inline', 'wondersites-logo.svg' ); ?>
 				<span class="slogan">Design | Development | Marketing</span>
 			</div>
 
