@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 293 286" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg class="banner-devices" width="136px" height="135px" viewBox="0 0 293 286" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-    <title>wondersites-ipad-iphone</title>
-    <desc>Created with Sketch.</desc>
+    <title>Wondersites responsive web designs</title>
+    <desc>wondersites.online.</desc>
     <defs>
         <linearGradient x1="50%" y1="19.5525174%" x2="50%" y2="100%" id="linearGradient-1">
             <stop stop-color="#FEFEFE" stop-opacity="0.0350800225" offset="0%"></stop>
