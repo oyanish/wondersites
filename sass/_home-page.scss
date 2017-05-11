@@ -15,8 +15,8 @@
     flex-direction: column;
     align-items: center;
 
-    img {
-      width: 60%;
+    .banner-big-text {
+      height: auto;
     }
   }
 
@@ -166,6 +166,39 @@
     }
   }
 }
+
+//*** HOMEPAGE FORM ***//
+.homepage-contact-form .container {
+  background: $color_grey_dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    color: #fff;
+    font-size: 2.5em;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      padding: 1em 2em;
+      margin: 1em;
+      border-radius: .3em;
+    }
+
+    button {
+      border: 1px solid $color_blue;
+      color: $color_blue;
+      background: #363636;
+      padding: 1em;
+      border-radius: .3em;
+    }
+  }
+}
+
 
 //*** MEDIA QUERIES ***//
 
