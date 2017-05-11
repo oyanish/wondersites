@@ -14,12 +14,17 @@ $color_blue: #4E9FF3;
 $color_blue_light: #68B5F2;
 $color_orange: #E67E22;
 $color_grey_light: #ECF0F1;
+$color_grey_dark: #363636;
 
-@import "../css/normalize.css";
+@import "css/normalize.css";
+@import "fonts/fonts.css";
 @import "header";
 @import "footer";
 @import "home-page";
 
+body {
+  font-family: "Avenir-Book", "sans-serif";
+}
 
 section .container {
   max-width: 980px;
