@@ -2,8 +2,12 @@
 
 <section class="hero-banner">
 	<div class="banner-logo">
-		<?php get_template_part( 'img/inline', 'stand-out.svg' ); ?>
-		<?php get_template_part( 'img/inline', 'wondersites-ipad-iphone.svg' ); ?>
+        <div class="banner-big-text">
+            <h2>Stand <span>out</span> on the <span>web</span></h2>
+        </div>
+        <div class="banner-devices">
+		    <?php get_template_part( 'img/inline', 'wondersites-ipad-iphone.svg' ); ?>
+        </div>
 	</div>
 
 	<div class="banner-text-button">
