@@ -14,13 +14,21 @@
 
   .slogan {
     color: #fff;
-    font-size: .9em;
+    font-size: .8em;
     display: block;
     text-align: center;
   }
 }
 
 // MENU STYLING
+.mobile-menu-toggle {
+  font-size: 1em;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: .5em 0;
+}
+
 .primary-menu ul {
   list-style: none;
   margin: 0;
@@ -30,6 +38,10 @@
     position: relative;
     padding: .75em 0;
     text-align: center;
+
+    &:not(.button-quote) {
+      display: none;
+    }
 
     &:not(:first-of-type):before {
       content: '';
