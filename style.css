@@ -9,10 +9,19 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: wondersites
 Tags:
 */
+@import url(css/normalize.css);
+@import url(fonts/fonts.css);
 .main-header {
   background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 2em 4em; }
 
@@ -20,10 +29,24 @@ Tags:
   margin-bottom: 1em; }
   .main-header .logo .slogan {
     color: #fff;
-    font-size: .6em;
+    font-size: .8em;
     display: block;
-    text-align: center;
-    text-transform: uppercase; }
+    text-align: center; }
+
+.icon-chevron-thin-down {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  display: inline-block; }
+  .icon-chevron-thin-down.rotated {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
+
+.mobile-menu-toggle {
+  font-size: 1em;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: .5em 0; }
 
 .primary-menu ul {
   list-style: none;
@@ -33,6 +56,8 @@ Tags:
     position: relative;
     padding: .75em 0;
     text-align: center; }
+    .primary-menu ul li:not(.button-quote) {
+      display: none; }
     .primary-menu ul li:not(:first-of-type):before {
       content: '';
       width: 2em;
@@ -57,8 +82,13 @@ Tags:
 
 @media screen and (min-width: 415px) {
   .primary-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center; }
     .primary-menu ul li {
       padding: 0 .75em;
@@ -71,19 +101,142 @@ Tags:
       .primary-menu ul li.button-quote {
         width: auto; } }
 
-@media screen and (min-width: 768px) {
-  .main-header .primary-menu ul li.button-quote {
+@media screen and (min-width: 1024px) {
+  .main-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .main-header .primary-menu ul {
+      -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+      align-items: baseline; }
+      .main-header .primary-menu ul li.button-quote {
+        margin: 0;
+        padding: .5em;
+        width: auto; } }
+
+.main-footer {
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 2em; }
+  .main-footer .footer-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .main-footer .copyright {
+    color: #fff;
+    font-size: .8em; }
+
+.main-footer .logo {
+  margin-bottom: 1em; }
+  .main-footer .logo .slogan {
+    color: #fff;
+    font-size: .9em;
+    display: block;
+    text-align: center; }
+
+.footer-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .footer-menu ul li {
+    position: relative;
+    padding: .75em 0;
+    text-align: center; }
+    .footer-menu ul li:not(:first-of-type):before {
+      content: '';
+      width: 2em;
+      border-top: 1px solid dodgerblue;
+      position: absolute;
+      left: calc(50% - 1em);
+      top: 0; }
+    .footer-menu ul li a {
+      text-decoration: none;
+      color: #ffffff; }
+      .footer-menu ul li a:hover {
+        color: #1d8eeb; }
+    .footer-menu ul li.button-quote {
+      border: 1px solid orange;
+      padding: 1em;
+      border-radius: 6px;
+      margin: 1em auto; }
+      .footer-menu ul li.button-quote:before {
+        content: none; }
+      .footer-menu ul li.button-quote a {
+        color: orange; }
+
+@media screen and (min-width: 420px) {
+  .footer-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .footer-menu ul li {
+      padding: 0 .75em;
+      text-align: center; }
+      .footer-menu ul li:not(:first-of-type):not(:last-of-type):before {
+        content: '\2022';
+        color: dodgerblue;
+        border: 0;
+        left: -1em; }
+      .footer-menu ul li.button-quote {
+        width: auto; } }
+
+@media screen and (min-width: 580px) {
+  .main-footer .footer-menu ul li.button-quote {
     width: 30%; } }
 
 @media screen and (min-width: 1024px) {
-  .main-header {
+  .main-footer .footer-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
-    align-items: flex-start; }
-    .main-header .primary-menu ul {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    width: 100%; }
+    .main-footer .footer-wrap .footer-menu ul {
+      -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
       align-items: baseline; }
-      .main-header .primary-menu ul li.button-quote {
+      .main-footer .footer-wrap .footer-menu ul li.button-quote {
         margin: 0;
         padding: .5em;
         width: auto; } }
@@ -91,22 +244,54 @@ Tags:
 .hero-banner {
   width: 100%;
   padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   background: #000;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(12%, rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.5)));
   background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0) 12%, rgba(0, 0, 0, 0.5) 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 35px), calc(50% + 35px) calc(100% - 35px), 50% 100%, calc(50% - 35px) calc(100% - 35px), 0 calc(100% - 35px));
   clip-path: polygon(0 0, 100% 0%, 100% calc(100% - 35px), calc(50% + 35px) calc(100% - 35px), 50% 100%, calc(50% - 35px) calc(100% - 35px), 0 calc(100% - 35px)); }
   .hero-banner .banner-logo {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center; }
-    .hero-banner .banner-logo img {
-      width: 60%; }
+    .hero-banner .banner-logo .banner-big-text {
+      padding: 0 .2em; }
+      .hero-banner .banner-logo .banner-big-text h2 {
+        color: #fff;
+        font-family: "Avenir-Black", "sans-serif";
+        font-size: 5em;
+        text-transform: uppercase;
+        margin: 0;
+        line-height: .9;
+        text-align: right; }
+        .hero-banner .banner-logo .banner-big-text h2 span {
+          color: #4E9FF3;
+          display: block; }
   .hero-banner .banner-text-button {
     color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center; }
     .hero-banner .banner-text-button h1 {
       padding: .75em 0;
@@ -119,13 +304,19 @@ Tags:
       text-transform: uppercase;
       border: 1px solid #68B5F2;
       background: #000;
+      color: #fff;
       border-radius: 6px;
       font-size: 1.25em;
       letter-spacing: 3px; }
 
 .homepage-services-section {
   padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   text-align: center; }
   .homepage-services-section h1 {
@@ -158,7 +349,12 @@ Tags:
       letter-spacing: 1px; }
 
 .homepage-client-reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
   padding: 1.5em; }
@@ -175,21 +371,39 @@ Tags:
 .homepage-client-logos {
   background: #ECF0F1; }
   .homepage-client-logos .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 2em; }
 
 .homepage-cta .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 2em 1em; }
   .homepage-cta .container h2 {
     font-size: 2em;
     font-weight: 300; }
   .homepage-cta .container .buttons-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center; }
   .homepage-cta .container button {
     border: 1px solid #68B5F2;
@@ -199,28 +413,89 @@ Tags:
     padding: 1em;
     font-size: 1.2em; }
 
+.homepage-contact-form {
+  background: #363636; }
+  .homepage-contact-form .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .homepage-contact-form .container h2 {
+      color: #fff;
+      font-size: 2.5em; }
+    .homepage-contact-form .container form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .homepage-contact-form .container form input {
+        padding: 1em 2em;
+        margin: 1em;
+        border-radius: .3em; }
+      .homepage-contact-form .container form button {
+        border: 1px solid #4E9FF3;
+        color: #4E9FF3;
+        background: #363636;
+        padding: 1em;
+        border-radius: .3em; }
+
 @media screen and (min-width: 415px) {
   .hero-banner .banner-logo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center; }
-    .hero-banner .banner-logo img {
-      width: 35%; }
+    .hero-banner .banner-logo .banner-big-text {
+      padding: 0 1em; }
   .homepage-client-reviews .container .client-review-box {
     padding: 0 2em; }
     .homepage-client-reviews .container .client-review-box p {
       line-height: 1.4; } }
 
+@media screen and (max-width: 666px) {
+  .banner-devices {
+    display: none; } }
+
 @media screen and (min-width: 768px) {
-  .hero-banner .banner-logo img {
-    width: 45%; }
+  .hero-banner {
+    max-height: 645px; }
+    .hero-banner .banner-text-button button.button-start-now {
+      padding-bottom: 2em; }
   .homepage-services-section .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
     align-items: baseline; }
     .homepage-services-section .row .service {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
+      -ms-flex-item-align: stretch;
       align-self: stretch;
       text-align: left;
       padding: 0 1em; }
@@ -234,27 +509,46 @@ Tags:
       .homepage-services-section .row .service button {
         padding: .75em 1em;
         display: block;
+        -ms-flex-item-align: start;
         align-self: flex-start; }
   .homepage-client-reviews .container .client-review-box {
     padding: 0 4em; }
   .homepage-cta .container .buttons-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center; }
     .homepage-cta .container .buttons-cta button {
       margin: 2em; } }
 
 @media screen and (min-width: 1024px) {
-  .hero-banner .banner-logo {
-    width: 80%;
-    margin: auto; }
-  .hero-banner .banner-text-button {
-    padding: 1em;
-    font-size: 1.5em; }
+  .hero-banner {
+    max-height: 475px; }
+    .hero-banner .banner-logo {
+      margin: auto;
+      padding-top: 4em; }
+    .hero-banner .banner-text-button {
+      padding: 2em;
+      font-size: 1.5em; }
+      .hero-banner .banner-text-button .banner-headline {
+        font-size: 1.25em;
+        margin: 0;
+        padding: .5em; }
+      .hero-banner .banner-text-button button.button-start-now {
+        font-size: 1em; }
   .homepage-services-section .row .service p {
     padding-right: 2em; }
   .homepage-client-reviews .container .client-review-box {
     padding: 2em 8em; } }
+
+body {
+  font-family: "Avenir-Book", "sans-serif"; }
 
 section .container {
   max-width: 980px;
