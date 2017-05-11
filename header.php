@@ -12,6 +12,7 @@
 				<span class="slogan">Design | Development | Marketing</span>
 			</div>
             <div class="mobile-menu-toggle">
+                <i class="icon-chevron-thin-down"></i>
                 Menu
             </div>
 			<nav class="primary-menu">
