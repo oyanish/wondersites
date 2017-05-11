@@ -21,6 +21,15 @@
 }
 
 // MENU STYLING
+.icon-chevron-thin-down {
+  transition: all 200ms ease-in-out;
+  display: inline-block;
+
+  &.rotated {
+    transform: rotate(180deg);
+  }
+}
+
 .mobile-menu-toggle {
   font-size: 1em;
   letter-spacing: 2px;
