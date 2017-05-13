@@ -27,6 +27,53 @@ body {
 }
 
 section .container {
-  max-width: 980px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+.button, button{
+  transition: all .5s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+#Light-Bulb-Icon {
+  transition: all 1s ease;
+  #plant, #left-leaf, #top-leaf, #right-leaf, #light-bulb, #light-rays, path {
+    transition: all 1.5s ease;
+  }
+
+  &:hover {
+
+    #plant {
+      transition: all 1.5s ease;
+      transform: scaleY(1.5) rotate(-24deg);
+    }
+
+    #left-leaf {
+      transition: all 1.5s ease;
+      transform: translate(1px, -5px);
+    }
+
+    #top-leaf {
+      transition: all 1.5s ease;
+      transform: translate(-6px, -9px);
+    }
+
+    #right-leaf {
+      transition: all 1.5s ease;
+      transform: translate(-2px, -9px);
+    }
+
+    #light-rays {
+      transition: all 1s ease;
+      transform: translateX(-1%) translateY(-1.5%);
+      path {
+        transition: all 1s ease;
+        stroke-width: 2;
+        stroke: green;
+      }
+    }
+  }
 }

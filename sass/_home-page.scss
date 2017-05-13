@@ -17,6 +17,7 @@
 
     .banner-big-text {
       padding: 0 .2em;
+      min-width: 313px;
 
       h2 {
         color: #fff;
@@ -32,6 +33,11 @@
           display: block;
         }
       }
+    }
+
+    .banner-devices {
+      min-width: 300px;
+      height: 310px;
     }
   }
 
@@ -223,7 +229,6 @@
 @media screen and (min-width: 415px) {
   .hero-banner {
     .banner-logo {
-      flex-direction: row;
       justify-content: center;
 
       .banner-big-text {
@@ -236,7 +241,7 @@
     .container {
       .client-review-box {
         padding: 0 2em;
-        p{
+        p {
           line-height: 1.4;
         }
       }
@@ -244,20 +249,10 @@
   }
 }
 
-@media screen and (max-width: 666px) {
-  .banner-devices {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .hero-banner {
-    max-height: 645px;
-
-    .banner-text-button {
-      button.button-start-now {
-        padding-bottom: 2em;
-      }
+    .banner-logo{
+      flex-direction: row;
     }
   }
 
@@ -323,15 +318,12 @@
 
 @media screen and (min-width: 1024px) {
   .hero-banner {
-    max-height: 475px;
-
     .banner-logo {
       margin: auto;
-      padding-top: 4em;
     }
 
     .banner-text-button {
-      padding: 2em;
+      padding: 2em 0;
       font-size: 1.5em;
 
       .banner-headline {
