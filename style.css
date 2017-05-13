@@ -74,7 +74,10 @@ Tags:
       border: 1px solid #E67E22;
       padding: 1em;
       border-radius: 6px;
-      margin: 1em auto; }
+      margin: 1em auto;
+      -webkit-transition: all .5s ease;
+      transition: all .5s ease;
+      position: relative; }
       .primary-menu ul li.button-quote:before {
         content: none; }
       .primary-menu ul li.button-quote a {
@@ -101,7 +104,7 @@ Tags:
       .primary-menu ul li.button-quote {
         width: auto; } }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .main-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -110,9 +113,34 @@ Tags:
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .main-header .mobile-menu-toggle {
+      display: none; }
+    .main-header .primary-menu ul {
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+      .main-header .primary-menu ul li {
+        display: block; }
+        .main-header .primary-menu ul li a {
+          -webkit-transition: all .25s ease;
+          transition: all .25s ease; }
+      .main-header .primary-menu ul .button-quote {
+        margin: 1em; } }
+
+@media screen and (min-width: 907px) {
+  .main-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start; }
@@ -225,9 +253,8 @@ Tags:
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -269,7 +296,8 @@ Tags:
     -ms-flex-align: center;
     align-items: center; }
     .hero-banner .banner-logo .banner-big-text {
-      padding: 0 .2em; }
+      padding: 0 .2em;
+      min-width: 313px; }
       .hero-banner .banner-logo .banner-big-text h2 {
         color: #fff;
         font-family: "Avenir-Black", "sans-serif";
@@ -281,6 +309,9 @@ Tags:
         .hero-banner .banner-logo .banner-big-text h2 span {
           color: #4E9FF3;
           display: block; }
+    .hero-banner .banner-logo .banner-devices {
+      min-width: 300px;
+      height: 310px; }
   .hero-banner .banner-text-button {
     color: #fff;
     display: -webkit-box;
@@ -450,10 +481,6 @@ Tags:
 
 @media screen and (min-width: 415px) {
   .hero-banner .banner-logo {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
@@ -464,15 +491,12 @@ Tags:
     .homepage-client-reviews .container .client-review-box p {
       line-height: 1.4; } }
 
-@media screen and (max-width: 666px) {
-  .banner-devices {
-    display: none; } }
-
 @media screen and (min-width: 768px) {
-  .hero-banner {
-    max-height: 645px; }
-    .hero-banner .banner-text-button button.button-start-now {
-      padding-bottom: 2em; }
+  .hero-banner .banner-logo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
   .homepage-services-section .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -528,20 +552,17 @@ Tags:
       margin: 2em; } }
 
 @media screen and (min-width: 1024px) {
-  .hero-banner {
-    max-height: 475px; }
-    .hero-banner .banner-logo {
-      margin: auto;
-      padding-top: 4em; }
-    .hero-banner .banner-text-button {
-      padding: 2em;
-      font-size: 1.5em; }
-      .hero-banner .banner-text-button .banner-headline {
-        font-size: 1.25em;
-        margin: 0;
-        padding: .5em; }
-      .hero-banner .banner-text-button button.button-start-now {
-        font-size: 1em; }
+  .hero-banner .banner-logo {
+    margin: auto; }
+  .hero-banner .banner-text-button {
+    padding: 2em 0;
+    font-size: 1.5em; }
+    .hero-banner .banner-text-button .banner-headline {
+      font-size: 1.25em;
+      margin: 0;
+      padding: .5em; }
+    .hero-banner .banner-text-button button.button-start-now {
+      font-size: 1em; }
   .homepage-services-section .row .service p {
     padding-right: 2em; }
   .homepage-client-reviews .container .client-review-box {
@@ -551,5 +572,49 @@ body {
   font-family: "Avenir-Book", "sans-serif"; }
 
 section .container {
-  max-width: 980px;
+  max-width: 1200px;
   margin: 0 auto; }
+
+.button, button {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+  .button:hover, button:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+
+#Light-Bulb-Icon {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
+  #Light-Bulb-Icon #plant, #Light-Bulb-Icon #left-leaf, #Light-Bulb-Icon #top-leaf, #Light-Bulb-Icon #right-leaf, #Light-Bulb-Icon #light-bulb, #Light-Bulb-Icon #light-rays, #Light-Bulb-Icon path {
+    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease; }
+  #Light-Bulb-Icon:hover #plant {
+    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+    -webkit-transform: scaleY(1.5) rotate(-24deg);
+    transform: scaleY(1.5) rotate(-24deg); }
+  #Light-Bulb-Icon:hover #left-leaf {
+    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+    -webkit-transform: translate(1px, -5px);
+    transform: translate(1px, -5px); }
+  #Light-Bulb-Icon:hover #top-leaf {
+    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+    -webkit-transform: translate(-6px, -9px);
+    transform: translate(-6px, -9px); }
+  #Light-Bulb-Icon:hover #right-leaf {
+    -webkit-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+    -webkit-transform: translate(-2px, -9px);
+    transform: translate(-2px, -9px); }
+  #Light-Bulb-Icon:hover #light-rays {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transform: translateX(-1%) translateY(-1.5%);
+    transform: translateX(-1%) translateY(-1.5%); }
+    #Light-Bulb-Icon:hover #light-rays path {
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease;
+      stroke-width: 2;
+      stroke: green; }
