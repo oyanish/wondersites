@@ -7,21 +7,21 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<div class="logo">
-				<?php get_template_part( 'img/inline', 'wondersites-logo.svg' ); ?>
-				<span class="slogan">Design | Development | Marketing</span>
-			</div>
+            <div class="logo">
+                <?php get_template_part( 'img/inline', 'wondersites-logo.svg' ); ?>
+                <span class="slogan">Design | Development | Marketing</span>
+            </div>
             <div class="mobile-menu-toggle">
                 <i class="icon-chevron-thin-down"></i>
                 Menu
             </div>
-			<nav class="primary-menu">
-				<ul>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">About us</a></li>
-					<li><a href="#">Our work</a></li>
-					<li><a href="#">Contact us</a></li>
-					<li class="button-quote"><a href="#">Get an instant quote</a></li>
-				</ul>
-			</nav>
+            <nav class="primary-menu">
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Our work</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li class="button button-quote"><a href="#">Get an instant quote</a></li>
+                </ul>
+            </nav>
 		</header>
