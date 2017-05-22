@@ -1,0 +1,75 @@
+// Gravity Forms Styles overrides
+
+.gform_wrapper {
+  width: 90%;
+  padding: 1em;
+  position: relative;
+}
+
+.gform_wrapper form .gform_body{
+
+
+  ul.gform_fields {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li.gfield {
+      position: relative;
+    }
+
+    li label.gfield_label {
+      color: #fff;
+      font-size: 1.5em;
+      position: absolute;
+      left: 0;
+      top: 1.25em;
+      transition: all .5s ease;
+      letter-spacing: 1.2;
+      .gfield_required {
+        display: none;
+      }
+
+      &.focused-or-filled {
+        transition: all .5s ease;
+        font-size: 1em;
+        top: 0;
+        color: $color_blue;
+      }
+    }
+
+    li .ginput_container {
+      textarea, input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #fff;
+        margin: .75em 0;
+        padding: .5em 0;
+        font-size: 1.5em;
+        background: none;
+        color: #fff;
+        letter-spacing: 1.4;
+        
+        &:focus {
+          outline: none;
+          border-bottom: 1px solid $color_blue;
+
+        }
+      }
+
+    }
+
+    li .ginput_container textarea {
+      height: 5em;
+    }
+
+    li .ginput_container input {
+    }
+  }
+
+}
+
+
+input:focus +label {
+
+}
