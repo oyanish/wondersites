@@ -13,14 +13,25 @@ Tags:
 $color_blue: #4E9FF3;
 $color_blue_light: #68B5F2;
 $color_orange: #E67E22;
-$color_grey_light: #ECF0F1;
+$color_grey_light: #f4f4f4;
+$color_grey: #c9c9c9;
 $color_grey_dark: #363636;
+$slick-font-family: "slick" !default;
+$slick-dot-color: black !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-dot-character: "\2022" !default;
+$slick-dot-size: 26px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
 
 @import "css/normalize.css";
 @import "fonts/fonts.css";
 @import "header";
 @import "footer";
 @import "home-page";
+@import "forms";
+@import "buttons";
 
 body {
   font-family: "Avenir-Book", "sans-serif";
@@ -36,6 +47,13 @@ section .container {
   &:hover {
     transform: scale(1.1);
   }
+}
+
+hr.underline {
+  width: 100px;
+  height: 1px;
+  background: $color_blue;
+  border: 0;
 }
 
 #Light-Bulb-Icon {
