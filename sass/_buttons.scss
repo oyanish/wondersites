@@ -1,0 +1,65 @@
+// Theme button styles
+
+button.small-blue {
+  border: 1px solid $color_blue;
+  border-radius: 3px;
+  color: white;
+  background: $color_blue;
+  padding: .5em 2em;
+  font-size: 1em;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+button.big-blue {
+  border: 1px solid $color_blue;
+  border-radius: 3px;
+  color: white;
+  background: $color_blue;
+  padding: 1em;
+  font-size: 1.3em;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.gform_footer .gform_button {
+  background: none;
+  border: 1px solid $color_blue;
+  border-radius: 5px;
+  color: $color_blue;
+  padding: .5em 3em;
+  font-size: 2em;
+  display: block;
+  margin: 1em auto;
+}
+
+.banner-text-button .button-start-now {
+  margin-bottom: 1em;
+  padding: 1em 1.25em;
+  text-transform: uppercase;
+  border: 1px solid $color_blue_light;
+  background: #000;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 1.25em;
+  letter-spacing: 3px;
+}
+
+@media screen and (min-width: 768px) {
+  button.small-blue{
+    padding: .75em 1em;
+    display: block;
+    align-self: flex-start;
+  }
+
+  button.big-blue {
+    margin: 2em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner-text-button .button-start-now {
+    font-size: 1em;
+  }
+}
+
