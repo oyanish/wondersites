@@ -46,7 +46,17 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-chevron-thin-down:before {
+.icon-chevron-thin-down:before, .icon-chevron-thin-right:before,.icon-chevron-thin-left:before   {
     content: "\e900";
+
 }
 
+.icon-chevron-thin-right {
+    transform: rotate(270deg);
+    display: block;
+}
+
+.icon-chevron-thin-left {
+    transform: rotate(90deg);
+    display: block;
+}
