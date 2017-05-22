@@ -12,7 +12,7 @@
                         <li><a href="#">About us</a></li>
                         <li><a href="#">Our work</a></li>
                         <li><a href="#">Contact us</a></li>
-                        <li class="button-quote"><a href="#">Get an instant quote</a></li>
+                        <li class="button button-quote"><a href="#">Get an instant quote</a></li>
                     </ul>
                 </nav>
             </div>
