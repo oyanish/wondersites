@@ -491,12 +491,13 @@ Tags:
       padding: 1.5em 0; }
 
 .contact-us {
-  background: #f4f4f4; }
+  background: #f4f4f4;
+  border-top: 1px solid #4E9FF3; }
   .contact-us .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1em; }
+    padding: 4em 0; }
     .contact-us .container h2 {
       font-size: 1.3em;
       margin: 0; }
@@ -511,14 +512,12 @@ Tags:
   .team-leaders .container h2,
   .contact-us .container h2 {
     font-size: 1.9em; }
-  .contact-us .container {
-    padding: 4em 0; }
-    .contact-us .container .buttons-cta {
-      display: flex;
-      flex-direction: row;
-      align-items: center; }
-      .contact-us .container .buttons-cta button {
-        margin: 1em; } }
+  .contact-us .container .buttons-cta {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .contact-us .container .buttons-cta button {
+      margin: 1em; } }
 
 @media screen and (min-width: 1024px) {
   .team-leaders .container .leader-blurbs {
