@@ -21,6 +21,8 @@ Tags:
 
 .main-header .logo {
   margin-bottom: 1em; }
+  .main-header .logo a {
+    text-decoration: none; }
   .main-header .logo .slogan {
     color: #fff;
     font-size: .8em;
@@ -448,6 +450,84 @@ Tags:
       padding: .5em; }
   .homepage-services-section .row .service p {
     padding-right: 2em; } }
+
+.about-us {
+  background: #f4f4f4;
+  border-bottom: 1px solid #4E9FF3; }
+  .about-us h1 {
+    margin: 0;
+    text-align: center;
+    padding-top: 1em; }
+  .about-us p {
+    text-align: center;
+    line-height: 1.6;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1.5em 0;
+    font-size: 1.1em; }
+
+.team-leaders .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .team-leaders .container h2 {
+    margin: 0;
+    padding-top: 2em; }
+  .team-leaders .container .leader-blurbs .blurb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em; }
+    .team-leaders .container .leader-blurbs .blurb img {
+      padding: 1em 0; }
+    .team-leaders .container .leader-blurbs .blurb span {
+      font-size: 1.5em; }
+    .team-leaders .container .leader-blurbs .blurb p {
+      text-align: center;
+      line-height: 1.6;
+      font-size: 1.1em;
+      width: 70%;
+      margin: 0 auto;
+      padding: 1.5em 0; }
+
+.contact-us {
+  background: #f4f4f4; }
+  .contact-us .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em; }
+    .contact-us .container h2 {
+      font-size: 1.3em;
+      margin: 0; }
+    .contact-us .container .buttons-cta {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .contact-us .container .buttons-cta button {
+        margin: 1em 0; }
+
+@media screen and (min-width: 768px) {
+  .team-leaders .container h2,
+  .contact-us .container h2 {
+    font-size: 1.9em; }
+  .contact-us .container {
+    padding: 4em 0; }
+    .contact-us .container .buttons-cta {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .contact-us .container .buttons-cta button {
+        margin: 1em; } }
+
+@media screen and (min-width: 1024px) {
+  .team-leaders .container .leader-blurbs {
+    display: flex;
+    flex-direction: row;
+    padding: 3em 0; }
+    .team-leaders .container .leader-blurbs .blurb {
+      width: 45%;
+      margin: 0 auto; } }
 
 .gform_wrapper {
   width: 90%;
