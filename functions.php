@@ -10,4 +10,6 @@ function wondersites_theme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'wondersites_theme_scripts' );
 
+add_theme_support( 'menus' );
+
 

@@ -528,6 +528,89 @@ Tags:
       width: 45%;
       margin: 0 auto; } }
 
+.service-banner {
+  background: #f4f4f4; }
+  .service-banner .container {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .service-banner .container h1 {
+      margin: 0;
+      font-size: 1.6em;
+      line-height: 1.6;
+      text-align: center; }
+    .service-banner .container span {
+      font-size: 1.5em;
+      padding: 1em 0; }
+    .service-banner .container .icon-chevron-thin-down {
+      font-size: 2em; }
+
+.services-offered .container .service-blurbs .blurb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1em 0; }
+
+.service-steps {
+  background: #f4f4f4;
+  position: relative; }
+  .service-steps .vertical-line {
+    position: absolute;
+    border-left: 3px solid #4E9FF3;
+    height: 80%;
+    top: 20%;
+    margin-left: 3em; }
+  .service-steps .container {
+    padding: 2em; }
+    .service-steps .container h2 {
+      text-align: center; }
+    .service-steps .container .category-blurbs {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .service-steps .container .category-blurbs .blurb {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 1em 0; }
+        .service-steps .container .category-blurbs .blurb img {
+          z-index: 2;
+          width: 80px;
+          margin: -21px; }
+        .service-steps .container .category-blurbs .blurb .text {
+          padding-left: 4em;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start; }
+          .service-steps .container .category-blurbs .blurb .text span {
+            font-size: 1.3em;
+            text-align: center; }
+          .service-steps .container .category-blurbs .blurb .text p {
+            line-height: 1.4; }
+
+.service-form {
+  background: #363636; }
+  .service-form .container h2 {
+    margin: 0;
+    color: #4E9FF3;
+    text-align: center;
+    font-size: 1.8em;
+    padding-top: 1em; }
+  .service-form .container p {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.2em; }
+
+@media screen and (min-width: 768px) {
+  .services-form .container {
+    width: 80%; } }
+
 .gform_wrapper {
   width: 90%;
   padding: 1em;

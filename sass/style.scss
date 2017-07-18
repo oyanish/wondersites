@@ -31,6 +31,7 @@ $slick-opacity-not-active: 0.25 !default;
 @import "footer";
 @import "home-page";
 @import "about-page";
+@import "services-page";
 @import "forms";
 @import "buttons";
 
@@ -95,4 +96,52 @@ hr.underline {
       }
     }
   }
+}
+
+//Breakpoints
+$mobile-only: 767px;
+$tablet-breakpoint: 768px;
+$tablet-landscape-breakpoint: 1024px;
+$desktop-breakpoint: 1185px;
+$widescreen: 1440px;
+
+//Media Queries
+@mixin mobile-only {
+  @media screen and (max-width: $mobile-only) {
+    @content
+  }
+}
+
+@mixin tablet-portrait {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content
+  }
+}
+
+@mixin tablet-landscape {
+  @media screen and (min-width: $tablet-landscape-breakpoint) {
+    @content
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content
+  }
+}
+
+
+@mixin widescreen {
+  @media screen and (min-width: $widescreen) {
+    @content
+  }
+}
+
+//Wondersites star background
+
+@mixin background-wondersites-star {
+  background-image: url('../img/wondersites-star-background.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top;
+  background-size: auto;
 }

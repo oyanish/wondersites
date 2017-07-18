@@ -64,9 +64,9 @@
             <?php if ( $testimonial_posts->have_posts() ) : while ( $testimonial_posts->have_posts() ) : $testimonial_posts->the_post(); ?>
                 <div class="client-review-box">
                     <?php
-                    $review_logo = get_field('testimonial_logo');
+                    $review_logo = esc_url( get_field('testimonial_logo')["sizes"]["thumbnail"]);
                     if( !empty($review_logo) ): ?>
-                        <img src="<?php echo $review_logo["sizes"]["thumbnail"]; ?>" alt="<?php echo $review_logo["alt"]; ?>" />
+                        <img src="<?php echo $review_logo ?>" alt="<?php echo $review_logo["alt"]; ?>" />
                     <?php endif; ?>
                     <p class="review-text"><?php echo esc_html(wp_strip_all_tags(get_field('testimonial_text'))); ?></p>
                     <span class="review-author"><?php echo esc_html(get_field('testimonial_author')); ?></span>
@@ -84,7 +84,7 @@
             <ul class="slick-gallery">
                 <?php foreach($images as $image): ?>
                     <li>
-                        <img src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['alt']; ?>" />
+                        <img src="<?php echo esc_url($image ['sizes']['medium']); ?>" alt="" />
                     </li>
                 <?php endforeach; ?>
             </ul>
@@ -106,9 +106,7 @@
 <section class="homepage-contact-form">
 	<div class="container">
 		<h2>Question?</h2>
-		<?php
-		gravity_form(1, $display_title = false, $display_description = false);
-        ?>
+		<?php gravity_form(1, $display_title = false, $display_description = false); ?>
 	</div>
 </section>
 

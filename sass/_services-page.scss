@@ -1,0 +1,126 @@
+.service-banner {
+  background: $color_grey_light;
+
+  .container {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      margin: 0;
+      font-size: 1.6em;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    span {
+      font-size: 1.5em;
+      padding: 1em 0;
+    }
+
+    .icon-chevron-thin-down {
+      font-size: 2em;
+    }
+  }
+}
+
+.services-offered {
+  .container {
+    .service-blurbs {
+      .blurb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 1em 0;
+      }
+    }
+  }
+}
+
+.service-steps {
+  background: $color_grey_light;
+  position: relative;
+
+  .vertical-line {
+    position: absolute;
+    border-left: 3px solid $color_blue;
+    height: 80%;
+    top: 20%;
+    margin-left: 3em;
+  }
+
+  .container {
+    padding: 2em;
+
+    h2 {
+      text-align: center;
+    }
+
+    .category-blurbs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .blurb {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 1em 0;
+
+        img {
+          z-index: 2;
+          width: 80px;
+          margin: -21px;
+        }
+        .text {
+          padding-left: 4em;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          
+          span {
+            font-size: 1.3em;
+            text-align: center;
+          }
+
+          p {
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+  }
+}
+
+.service-form {
+  background: $color_grey_dark;
+  .container {
+    h2 {
+      margin: 0;
+      color: $color_blue;
+      text-align: center;
+      font-size: 1.8em;
+      padding-top: 1em;
+    }
+
+    p {
+      margin: 0;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .services-form .container {
+    width: 80%;
+  }
+}
+
+
