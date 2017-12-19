@@ -12,4 +12,12 @@ add_action( 'wp_enqueue_scripts', 'wondersites_theme_scripts' );
 
 add_theme_support( 'menus' );
 
+register_nav_menus( array(
+	'header_menu' => 'Main menu',
+	'footer_menu_1' => 'Footer one',
+	'footer_menu_2' => 'Footer two',
+	'footer_menu_3' => 'Footer three',
+	'footer_menu_4' => 'Footer four'
+) );
+
 

@@ -1,0 +1,84 @@
+
+@font-face {
+    font-family: 'Avenir-Book';
+    src: url('../fonts/Avenir-Book.eot?#iefix') format('embedded-opentype'),  url('../fonts/Avenir-Book.woff') format('woff'), url('../fonts/Avenir-Book.ttf')  format('truetype'), url('../fonts/Avenir-Book.svg#Avenir-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Medium';
+    src: url('../fonts/Avenir-Medium.eot?#iefix') format('embedded-opentype'),  url('../fonts/Avenir-Medium.woff') format('woff'), url('../fonts/Avenir-Medium.ttf')  format('truetype'), url('../fonts/Avenir-Medium.svg#Avenir-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Black';
+    src: url('../fonts/Avenir-Black.eot?#iefix') format('embedded-opentype'),  url('../fonts/Avenir-Black.woff') format('woff'), url('../fonts/Avenir-Black.ttf')  format('truetype'), url('../fonts/Avenir-Black.svg#Avenir-Black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?dkmytw');
+    src:  url('../fonts/icomoon.eot?dkmytw#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?dkmytw') format('truetype'),
+    url('../fonts/icomoon.woff?dkmytw') format('woff'),
+    url('../fonts/icomoon.svg?dkmytw#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Light';
+    src: url('../fonts/Avenir-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/Avenir-Light.woff') format('woff'), url('../fonts/Avenir-Light.ttf')  format('truetype'), url('../fonts/Avenir-Light.svg#Avenir-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNext-UltraLight';
+    src: url('../fonts/AvenirNext-UltraLight.eot?#iefix') format('embedded-opentype'),  url('../fonts/AvenirNext-UltraLight.woff') format('woff'), url('../fonts/AvenirNext-UltraLight.ttf')  format('truetype'), url('../fonts/AvenirNext-UltraLight.svg#AvenirNext-UltraLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AmaticSC-Regular';
+    src: url('../fonts/AmaticSC-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/AmaticSC-Regular.woff') format('woff'), url('../fonts/AmaticSC-Regular.ttf')  format('truetype'), url('../fonts/AmaticSC-Regular.svg#AmaticSC-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-thin-down:before, .icon-chevron-thin-right:before,.icon-chevron-thin-left:before   {
+    content: "\e900";
+
+}
+
+.icon-chevron-thin-right {
+    transform: rotate(270deg);
+    display: block;
+}
+
+.icon-chevron-thin-left {
+    transform: rotate(90deg);
+    display: block;
+}
