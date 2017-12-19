@@ -20,8 +20,8 @@
             <nav class="primary-menu">
                 <ul>
 	                <?php
-	                wp_nav_menu( array()); ?>
-                    <li class="button button-quote"><a href="#">Get an instant quote</a></li>
+	                wp_nav_menu( array('theme_location'=>'header_menu')); ?>
+                    <li class="button button-quote"><a href="#">Start now</a></li>
                 </ul>
             </nav>
 		</header>

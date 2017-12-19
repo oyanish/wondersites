@@ -20,6 +20,14 @@ $(document).ready(function() {
         nextArrow: '<i class="slick-next icon-chevron-thin-right"></i>',
     });
 
+    $('.center').slick({
+        centerMode: true,
+        centerPadding: '15px',
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 1500
+    });
+
     $('.slick-gallery').slick({
         infinite: true,
         slidesToShow: 6,

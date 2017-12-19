@@ -16,6 +16,7 @@ $color_orange: #E67E22;
 $color_grey_light: #f4f4f4;
 $color_grey: #c9c9c9;
 $color_grey_dark: #363636;
+$color_text_grey: #6A6A6A;
 $slick-font-family: "slick" !default;
 $slick-dot-color: black !default;
 $slick-dot-color-active: $slick-dot-color !default;
@@ -25,23 +26,14 @@ $slick-opacity-default: 0.75 !default;
 $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 0.25 !default;
 
-@import "css/normalize.css";
-@import "fonts/fonts.css";
-@import "header";
-@import "footer";
-@import "home-page";
-@import "about-page";
-@import "services-page";
-@import "forms";
-@import "buttons";
 
 // General styles
 body {
   font-family: "Avenir-Book", "sans-serif";
 }
 
-section .container {
-  max-width: 1200px;
+.container {
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -57,6 +49,15 @@ hr.underline {
   height: 1px;
   background: $color_blue;
   border: 0;
+}
+
+hr.blue-underline {
+  width: 200px;
+  height: 3px;
+  background: $color_blue;
+  border: 0;
+  display: block;
+  margin: 0 auto;
 }
 
 #Light-Bulb-Icon {
@@ -99,41 +100,36 @@ hr.underline {
   }
 }
 
-//Breakpoints
-$mobile-only: 767px;
-$tablet-breakpoint: 768px;
-$tablet-landscape-breakpoint: 1024px;
-$desktop-breakpoint: 1185px;
-$widescreen: 1440px;
+//Font styles
 
-//Media Queries
-@mixin mobile-only {
-  @media screen and (max-width: $mobile-only) {
-    @content
-  }
+h3 {
+  margin: 0;
 }
 
+
+//Media Queries
+
 @mixin tablet-portrait {
-  @media screen and (min-width: $tablet-breakpoint) {
+  @media screen and (min-width: 768px) {
     @content
   }
 }
 
 @mixin tablet-landscape {
-  @media screen and (min-width: $tablet-landscape-breakpoint) {
+  @media screen and (min-width: 1024px) {
     @content
   }
 }
 
 @mixin desktop {
-  @media screen and (min-width: $desktop-breakpoint) {
+  @media screen and (min-width: 1185px) {
     @content
   }
 }
 
 
 @mixin widescreen {
-  @media screen and (min-width: $widescreen) {
+  @media screen and (min-width: 1440px) {
     @content
   }
 }
@@ -146,3 +142,14 @@ $widescreen: 1440px;
   background-position: left top;
   background-size: auto;
 }
+
+@import "css/normalize.css";
+@import "css/fonts.css";
+@import "css/font-awesome.css";
+@import "header";
+@import "footer";
+@import "home-page";
+@import "about-page";
+@import "services-page";
+@import "forms";
+@import "buttons";

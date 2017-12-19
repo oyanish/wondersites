@@ -4,7 +4,12 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 2em 4em;
+  padding: 30px 0 0;
+
+  @include tablet-landscape {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 
@@ -40,12 +45,21 @@
   color: #fff;
   text-transform: uppercase;
   margin: .5em 0;
+
+  @include tablet-portrait {
+    display: none;
+  }
 }
 
 .primary-menu ul {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @include tablet-portrait {
+    display: flex;
+    align-items: center;
+  }
 
   li {
     position: relative;
@@ -54,6 +68,14 @@
 
     &:not(.button-quote) {
       display: none;
+
+      @include tablet-portrait {
+        display: block;
+        padding: 10px;
+        text-transform: uppercase;
+        font-size: 15px;
+        letter-spacing: 1px;
+      }
     }
 
     &:not(:first-of-type):before {
@@ -64,6 +86,9 @@
       left: calc(50% - 1em);
       top: 0;
 
+      @include tablet-portrait {
+        display: none;
+      }
     }
 
     a {
@@ -76,12 +101,17 @@
     }
 
     &.button-quote {
+      font-size: 1.3em;
       border: 1px solid $color_orange;
-      padding: 1em;
+      padding: 10px;
       border-radius: 6px;
       margin: 1em auto;
       transition: all .5s ease;
       position: relative;
+
+      @include tablet-portrait {
+        margin-left: 10px;
+      }
 
       &:before {
         content: none;
@@ -93,76 +123,3 @@
     }
   }
 }
-
-@media screen and (min-width: 415px) {
-  .primary-menu ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    li {
-      padding: 0 .75em;
-      text-align: center;
-
-      &:not(:first-of-type):not(:last-of-type):before {
-        content: '\2022';
-        color: $color_blue;
-        border: 0;
-        left: -1em;
-      }
-
-      &.button-quote {
-        width: auto;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .main-header {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-
-    .mobile-menu-toggle {
-      display: none;
-    }
-
-    .primary-menu ul {
-      justify-content: flex-end;
-
-      li {
-        display: block;
-        a {
-          transition: all .25s ease;
-        }
-
-
-      }
-
-      .button-quote {
-        margin: 1em;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 907px) {
-  .main-header {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-
-    .primary-menu ul {
-      align-items: baseline;
-
-      li.button-quote {
-          margin: 0;
-          padding: .5em;
-          width: auto;
-      }
-    }
-  }
-}
-

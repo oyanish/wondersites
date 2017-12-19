@@ -1,132 +1,162 @@
-// GENERAL FOOTER SETTINGS
-
 .main-footer {
-  background: #000;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 2em;
-
   .footer-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    hr.footer-underline {
+      width: 85%;
+      height: 1px;
+      background: $color_grey;
+      border: 0;
 
-  .copyright {
-    color: #fff;
-    font-size: .8em;
-  }
-}
+      @include tablet-landscape {
+        width: 95%;
+      }
 
-// LOGO STYLING
-.main-footer .logo {
-  margin-bottom: 1em;
-
-  .slogan {
-    color: #fff;
-    font-size: .9em;
-    display: block;
-    text-align: center;
-  }
-}
-
-// MENU STYLING
-.footer-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  li {
-    position: relative;
-    padding: .75em 0;
-    text-align: center;
-
-    &:not(:first-of-type):before {
-      content: '';
-      width: 2em;
-      border-top: 1px solid dodgerblue;
-      position: absolute;
-      left: calc(50% - 1em);
-      top: 0;
-
-    }
-
-    a {
-      text-decoration: none;
-      color: #ffffff;
-
-      &:hover {
-        color: #1d8eeb;
+      @include desktop {
+        width: 100%;
       }
     }
 
-    &.button-quote {
-      border: 1px solid orange;
-      padding: 1em;
-      border-radius: 6px;
-      margin: 1em auto;
+    .logo-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 25px;
 
-      &:before {
-        content: none;
+      @include tablet-portrait {
+        flex-direction: row;
+        justify-content: space-around;
       }
 
-      a {
-        color: orange;
+      @include tablet-landscape {
+        align-items: end;
+        justify-content: space-between;
+      }
+
+      .logo-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+
+        @include tablet-portrait {
+          align-items: flex-start;
+        }
+
+        @include tablet-landscape {
+          margin-bottom: 0;
+        }
+
+        .catchphrase {
+          text-align: center;
+          padding: 20px 0;
+
+          @include tablet-landscape {
+            padding-bottom: 0;
+          }
+        }
+      }
+
+      .footer-social {
+        text-align: center;
+
+        @include tablet-landscape {
+          display: flex;
+          align-items: center;
+          flex-direction: row-reverse;
+        }
+
+        .footer-button {
+
+          @include tablet-landscape {
+            margin-right: 20px;
+            margin-top: 0;
+          }
+
+          a {
+            text-decoration: none;
+            color: $color_orange;
+            border: 1px solid $color_orange;
+            padding: 10px;
+            border-radius: 6px;
+            transition: all .5s ease;
+          }
+        }
+
+        .social-links {
+          margin-top: 30px;
+
+          @include tablet-landscape {
+            margin-top: 0;
+          }
+
+          a i {
+            color: $color_blue;
+            font-size: 35px;
+            padding: 0 5px;
+
+            @include tablet-landscape {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+
+    }
+
+    .footer-menu-section {
+      .footer-menus {
+        padding: 15px 25px;
+
+        @include tablet-portrait {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 12px 60px;
+        }
+
+        @include tablet-landscape {
+          padding: 15px 25px;
+        }
+
+        ul {
+          list-style: none;
+          padding-left: 10px;
+          margin-bottom: 2em;
+
+          @include tablet-portrait {
+            flex-basis: 45%;
+          }
+
+          @include tablet-landscape {
+            flex-basis: unset;
+            padding-left: 0;
+            margin-bottom: 0;
+          }
+
+          li {
+            margin-bottom: 6px;
+
+            &:first-child a {
+              font-family: 'Avenir-Black', 'sans-serif';
+            }
+
+            a {
+              font-family: 'Avenir-Book', 'sans-serif';
+              text-decoration: none;
+              color: $color_grey-dark;
+            }
+          }
+        }
       }
     }
-  }
-}
 
-@media screen and (min-width: 420px) {
-  .footer-menu ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    li {
-      padding: 0 .75em;
+    .copyright {
       text-align: center;
+      margin-bottom: 60px;
+      margin-top: 60px;
 
-      &:not(:first-of-type):not(:last-of-type):before {
-        content: '\2022';
-        color: dodgerblue;
-        border: 0;
-        left: -1em;
-      }
-
-      &.button-quote {
-        width: auto;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 580px) {
-  .main-footer {
-    .footer-menu ul {
-      li.button-quote {
-        width: 30%;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .main-footer .footer-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    width: 100%;
-
-    .footer-menu ul {
-      align-items: baseline;
-
-      li.button-quote {
-        margin: 0;
-        padding: .5em;
-        width: auto;
+      span {
+        font-size: 15px;
+        color: $color_grey;
       }
     }
   }

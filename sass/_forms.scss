@@ -8,7 +8,6 @@
 
 .gform_wrapper form .gform_body{
 
-
   ul.gform_fields {
     list-style: none;
     margin: 0;
@@ -19,11 +18,12 @@
     }
 
     li label.gfield_label {
-      color: #fff;
-      font-size: 1.5em;
+      color: $color_text_grey;
+      font-size: 17px;
+      font-weight: 900;
       position: absolute;
-      left: 0;
-      top: 1.25em;
+      left: 15px;
+      top: 33px;
       transition: all .5s ease;
       letter-spacing: 1.2;
       .gfield_required {
@@ -33,30 +33,28 @@
       &.focused-or-filled {
         transition: all .5s ease;
         font-size: 1em;
-        top: 0;
-        color: $color_blue;
+        top: 6px;
+        background: #FFF;
       }
     }
 
     li .ginput_container {
       textarea, input {
         width: 100%;
-        border: none;
-        border-bottom: 1px solid #fff;
+        border: 1px solid $color_text_grey;
+        border-radius: 10px;
         margin: .75em 0;
         padding: .5em 0;
+        padding-left: 15px;
         font-size: 1.5em;
         background: none;
-        color: #fff;
-        letter-spacing: 1.4;
+        color: $color_grey;
+        letter-spacing: 1.4px;
         
         &:focus {
-          outline: none;
-          border-bottom: 1px solid $color_blue;
-
+          border: 1px solid $color_blue;
         }
       }
-
     }
 
     li .ginput_container textarea {
