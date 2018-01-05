@@ -1,5 +1,9 @@
 .service-banner {
-  background: $color_grey_light;
+  background-image: url("img/services-banner-photo.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
 
   .container {
     padding: 2em;
@@ -7,88 +11,203 @@
     flex-direction: column;
     align-items: center;
 
-    h1 {
-      margin: 0;
-      font-size: 1.6em;
-      line-height: 1.6;
+    .services-banner-text {
+      background: rgba(255, 255, 255, 0.7);
+      display: flex;
+      flex-direction: column;
       text-align: center;
-    }
+      padding: 1.5em;
+      line-height: 1.6;
 
-    span {
-      font-size: 1.5em;
-      padding: 1em 0;
-    }
+      h1 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 0;
+        font-size: 2.5em;
+        font-family: 'Avenir-Light', 'sans-serif';
+        color: $color-grey_dark;
+      }
 
-    .icon-chevron-thin-down {
-      font-size: 2em;
+      span {
+        font-size: 1.2em;
+        padding: 1em 0;
+
+        a {
+          font-size: 1.25em;
+          color: $color_blue;
+        }
+      }
+
+      i {
+        font-size: 3em;
+      }
     }
   }
 }
 
 .services-offered {
-  .container {
-    .service-blurbs {
-      .blurb {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 60%;
-        margin: 0 auto;
-        text-align: center;
-        padding: 1em 0;
+  margin-bottom: 65px;
+
+  @include tablet-portrait {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @include desktop {
+    max-width: 1500px;
+    margin: 60px auto;
+  }
+
+  .service-card {
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, .10);
+    margin: 30px 15px;
+    max-width: 450px;
+
+    @include tablet-portrait {
+      width: 45%;
+      transition: all 1s ease;
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 60px 0 rgba(0, 0, 0, .30);
       }
     }
-  }
-}
 
-.service-steps {
-  background: $color_grey_light;
-  position: relative;
-
-  .vertical-line {
-    position: absolute;
-    border-left: 3px solid $color_blue;
-    height: 80%;
-    top: 20%;
-    margin-left: 3em;
-  }
-
-  .container {
-    padding: 2em;
-
-    h2 {
+    .service-card-banner {
+      background-color: #3d3d3f;
+      display: flex;
+      flex-direction: column;
       text-align: center;
+      padding-top: 20px;
+
+      .service-image {
+        svg {
+          width: 100px;
+          height: 110px;
+        }
+      }
+
+      h2 {
+        text-transform: uppercase;
+        font-size: 1.3em;
+        letter-spacing: 2px;
+        color: white;
+        padding: 7px 15px;
+      }
     }
 
-    .category-blurbs {
+    .service-info {
+      padding: 10px 25px 70px;
       display: flex;
       flex-direction: column;
       align-items: center;
 
-      .blurb {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 1em 0;
+      p {
+        text-align: center;
+        font-size: 1.1em;
+        line-height: 28px;
+      }
 
-        img {
-          z-index: 2;
-          width: 80px;
-          margin: -21px;
-        }
-        .text {
-          padding-left: 4em;
+      a {
+        margin-top: 20px;
+        color: $color_orange;
+      }
+    }
+  }
+}
+
+.service-packages {
+
+  h2 {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: .6px;
+    color: $color_blue;
+
+    @include tablet-portrait {
+      font-size: 35px;
+    }
+
+    @include tablet-landscape {
+      width: 80%;
+      margin: 30px auto;
+    }
+
+    @include desktop {
+      padding: 60px 25px 30px;
+    }
+  }
+
+  .packages-container {
+    background-color: $color_blue;
+    clip-path: polygon(50% 35px, calc(50% + 35px) 0, 100% 0, 100% 100%, 0 100%, 0 0, calc(50% - 35px) 0);
+
+    .featured-packages {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 0 30px;
+
+      @include tablet-portrait {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: unset;
+      }
+
+      @include desktop {
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 100px 0 70px;
+      }
+
+      .package-card {
+        max-width: 250px;
+        background-color: #FFF;
+        padding: 15px 40px 40px;
+        border-radius: 25px;
+        margin-bottom: 45px;
+
+        .package-card-image {
           display: flex;
           flex-direction: column;
-          align-items: flex-start;
-          
+          align-items: center;
+          padding: 30px 0;
+
+          svg {
+            width: 40px;
+          }
+
           span {
-            font-size: 1.3em;
-            text-align: center;
+
+          }
+        }
+
+        .package-card-info {
+          display: flex;
+          flex-direction: column;
+          align-items: left;
+
+          .title-one {
+            letter-spacing: 1px;
+          }
+
+          .title-two {
+            font-size: 23px;
+            letter-spacing: 1px;
           }
 
           p {
-            line-height: 1.4;
+            line-height: 25px;
+          }
+
+          .price {
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
           }
         }
       }
@@ -96,31 +215,57 @@
   }
 }
 
-.service-form {
+.service-cta {
   background: $color_grey_dark;
-  .container {
-    h2 {
-      margin: 0;
-      color: $color_blue;
-      text-align: center;
-      font-size: 1.8em;
-      padding-top: 1em;
+  padding-bottom: 40px;
+
+  h2 {
+    margin: 0;
+    color: $color_blue;
+    text-align: center;
+    font-size: 1.8em;
+    padding: 40px 15px 20px;
+    letter-spacing: 1px;
+
+    @include tablet-landscape {
+      font-size: 2em;
+    }
+  }
+
+  p {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.2em;
+    line-height: 25px;
+    letter-spacing: 1px;
+
+    @include tablet-landscape {
+      line-height: 35px;
+      font-size: 1.5em;
+      width: 80%;
+      margin: 20px auto;
+    }
+  }
+
+  .service-cta-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      background-color: $color_blue;
+      color: #FFF;
     }
 
-    p {
-      margin: 0;
-      color: #fff;
-      text-align: center;
-      padding: 1em;
-      font-size: 1.2em;
+    .orange-button {
+      background-color: $color_orange;
+      border: 1px solid $color_orange;
     }
   }
 }
 
-@media screen and (min-width: 768px) {
-  .services-form .container {
-    width: 80%;
-  }
-}
+
 
 

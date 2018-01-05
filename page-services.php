@@ -2,65 +2,110 @@
 
 <section class="service-banner">
 	<div class="container">
-		<h1>At Wondersites, we are passionate about making your website work for you</h1>
-        <hr class="underline">
-		<span>What can we offer you?</span>
-		<i class="icon-chevron-thin-down"></i>
+        <div class="services-banner-text">
+            <h1>Services</h1>
+            <hr class="underline">
+            <span>We offer a wide range of design, development and marketing services. As small business owners ourselves, we know that time is money, so our most popular products and services are now available to you at a click of the button.</span>
+            <i class="fa fa-angle-down"></i>
+        </div>
 	</div>
 </section>
 
 <section class="services-offered">
-	<div class="container">
-		<?php if( have_rows('offered_services') ): ?>
-			<div class="service-blurbs">
-				<?php while( have_rows('offered_services') ): the_row();
-					$icon = esc_url( get_sub_field('service_icon')['sizes']['thumbnail'] );
-					$description = esc_html( strip_tags( get_sub_field('service_description') ) );
-					?>
-					<div class="blurb">
-						<img src="<?php echo $icon ?>" alt="">
-						<?php echo $description ?>
-					</div>
-				<?php endwhile; ?>
-			</div>
-		<?php endif; ?>
-	</div>
+	<div class="service-card">
+        <div class="service-card-banner">
+	        <div class="service-image"><?php get_template_part( 'img/inline', 'services-web-development.svg' ); ?></div>
+            <h2>Web development</h2>
+        </div>
+        <div class="service-info">
+            <p>Stare at wall turn and meow stare at wall some more meow again continue staring furrier and even more furrier hairball for thug cat and love and coo around boyfriend who purrs and makes the perfect moonlight eyes so i can purr and swat the glittery gleaming yarn to him (the yarn is from a $125 sweater) or purr lay on arms while you're using the keyboard so litter kitter kitty litty little kitten big roar roar feed me. </p>
+            <a class="small-orange" href="">Explore</a>
+        </div>
+    </div>
+	<div class="service-card">
+        <div class="service-card-banner">
+	        <div class="service-image"><?php get_template_part( 'img/inline', 'services-web-design.svg' ); ?></div>
+            <h2>Design and branding</h2>
+        </div>
+        <div class="service-info">
+            <p>Kick up litter meow, scratch the box hide when guests come over jump around on couch, meow constantly until given food, crash against wall but walk away like nothing happened. Be a nyan cat, feel great about it, be annoying 24/7 poop rainbows in litter box all day if it fits, i sits under the bed.</p>
+            <a class="small-orange" href="">Explore</a>
+        </div>
+    </div>
+	<div class="service-card">
+        <div class="service-card-banner">
+	        <div class="service-image"><?php get_template_part( 'img/inline', 'services-marketing.svg' ); ?></div>
+            <h2>Online marketing</h2>
+        </div>
+        <div class="service-info">
+            <p>Lounge in doorway rub whiskers on bare skin act innocent or kitty poochy yet hiss and stare at nothing then run suddenly away. Run outside as soon as door open chase red laser dot or refuse to leave cardboard box scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food chase the pig around the house so love and coo around boyfriend who purrs and makes the perfect moonlight eyes so i can purr and swat the glittery gleaming yarn to him (the yarn is from a $125 sweater) and licks your face.</p>
+            <a class="small-orange" href="">Explore</a>
+        </div>
+    </div>
+	<div class="service-card">
+        <div class="service-card-banner">
+	        <div class="service-image"><?php get_template_part( 'img/inline', 'services-maintenance.svg' ); ?></div>
+            <h2>Hosting and maintenance</h2>
+        </div>
+        <div class="service-info">
+            <p> Plop down in the middle where everybody walks. Poop on grasses run in circles leave dead animals as gifts plan steps for world domination scratch leg; meow for can opener to feed me. Chase laser white cat sleeps on a black shirt and missing until dinner time, and spend all night ensuring people don't sleep sleep all day yet thinking longingly about tuna brine for destroy the blinds.</p>
+            <a class="small-orange" href="">Explore</a>
+        </div>
+    </div>
+	<div class="service-card">
+        <div class="service-card-banner">
+	        <div class="service-image"><?php get_template_part( 'img/inline', 'services-consulting.svg' ); ?></div>
+            <h2>Digital business consulting</h2>
+        </div>
+        <div class="service-info">
+            <p>Mark territory howl uncontrollably for no reason loved it, hated it, loved it, hated it chase dog then run away so cat is love, cat is life so kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff annoy kitten brother with poking.</p>
+            <a class="small-orange" href="">Explore</a>
+        </div>
+    </div>
+    <div class="service-card">
+        <div class="service-card-banner">
+            <div class="service-image"><?php get_template_part( 'img/inline', 'services-custom.svg' ); ?></div>
+            <h2>Custom services</h2>
+        </div>
+        <div class="service-info">
+            <p>Mark territory howl uncontrollably for no reason loved it, hated it, loved it, hated it chase dog then run away so cat is love, cat is life so kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff annoy kitten brother with poking.</p>
+            <a class="small-orange" href="">Explore</a>
+        </div>
+    </div>
 </section>
 
-<section class="service-steps">
-    <div class="vertical-line"></div>
-	<div class="container">
-        <h2>We are your one stop for all your web solution needs</h2>
-        <hr class="underline">
-		<?php if( have_rows('service_categories') ): ?>
-            <div class="category-blurbs">
-				<?php while( have_rows('service_categories') ): the_row();
-					$icon = esc_url( get_sub_field('category_icon')['sizes']['thumbnail']);
-					$name = esc_html( get_sub_field('category_name') );
-					$description = esc_html( strip_tags( get_sub_field('category_description') ) );
-					?>
-                    <div class="blurb">
-                        <img src="<?php echo $icon ?>" alt="">
-                        <div class="text">
-                            <span><?php echo $name ?></span>
-                            <?php echo $description ?>
-                        </div>
+<section class="service-packages">
+	<?php $package_cards = new WP_Query( array( 'post_type' => 'packages' ) ); ?>
+    <h2>Already know what you need? Shop our most popular services</h2>
+    <div class="packages-container">
+        <div class="featured-packages">
+		    <?php if ( $package_cards->have_posts() ) : while ( $package_cards->have_posts() ) : $package_cards->the_post(); ?>
+                <div class="package-card">
+                    <div class="package-card-image">
+                        <img src="<?php echo get_field( 'package_icon' )['sizes']['medium']; ?>" alt="">
                     </div>
-				<?php endwhile; ?>
-            </div>
-		<?php endif; ?>
-	</div>
+                    <div class="package-card-info">
+                        <span class="title-one"><?php esc_html( the_field( 'package_preview_title_1' ) ); ?></span>
+                        <span class="title-two"><?php esc_html( the_field( 'package_preview_title_2' ) ); ?></span>
+					    <?php esc_html( the_field( 'package_description' ) ); ?>
+                        <span class="price">$<?php esc_html( the_field( 'package_price' ) ); ?></span>
+                        <a class="small-orange" href="<?php the_permalink(); ?>">Buy now</a>
+                    </div>
+                </div>
+		    <?php endwhile;
+			    wp_reset_postdata(); endif; ?>
+        </div>
+    </div>
 </section>
 
-<section class="service-form">
-	<div class="container">
-		<h2>Is your website doing everything it should?</h2>
-		<hr class="underline">
-		<p>Get a free professional evaluation & security check-up of your website today</p>
-		<?php gravity_form(2, $display_title = false, $display_description = false); ?>
-	</div>
+<section class="service-cta">
+    <h2>Not quite sure what you need yet? We can help!</h2>
+    <p>Let's chat! We will ask you the right questions to determine what products and services would yield the best results for your business growth.</p>
+    <div class="service-cta-buttons">
+        <a class="wondersites-blue-button" href="<?php echo esc_url( site_url(  ) ); ?>"><span>Answer a few questions</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        <p>or</p>
+        <a class="wondersites-blue-button orange-button" href="<?php echo esc_url( site_url(  ) ); ?>"><span>Schedule a call</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    </div>
 </section>
 
 <?php get_footer(); ?>
-
-
