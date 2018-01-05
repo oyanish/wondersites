@@ -115,7 +115,7 @@
 <section class="homepage-client-reviews">
     <div class="container">
 		<?php $testimonial_posts = new WP_Query( array( 'post_type' => 'testimonials' ) ); ?>
-        <h2 class="testimonial-heading">We provide a great customer experience.</h2>
+        <h2 class="testimonial-heading">Wondersites is your #1 online presence specialist</h2>
         <div class="slick-carousel"
              data-slick='{"dots": true, "centerMode": false, "autoplay": true, "autoplaySpeed": 5000, "fade": true}'>
 			<?php if ( $testimonial_posts->have_posts() ) : while ( $testimonial_posts->have_posts() ) : $testimonial_posts->the_post(); ?>
