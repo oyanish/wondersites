@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="204px" height="55px" viewBox="0 0 204 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
-    <title>Wondersites logo</title>
+    <title>Wondersites logo inverted</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="100%" gradientTransform="translate(0.500000,0.000000),scale(0.984370,1.000000),rotate(90.000000),translate(-0.500000,-0.000000)" id="radialGradient-1">
