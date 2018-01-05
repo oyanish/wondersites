@@ -1,6 +1,6 @@
 // Theme button styles
 
-button.small-blue {
+.small-blue {
   border: 1px solid $color_blue;
   border-radius: 50px;
   color: $color_blue;
@@ -10,6 +10,24 @@ button.small-blue {
   font-weight: 100;
   letter-spacing: 1px;
   transition: all .4s ease;
+  text-decoration: none;
+
+  &:hover {
+    font-size: 1.3em;
+  }
+}
+
+.small-orange {
+  border: 1px solid $color_orange;
+  border-radius: 50px;
+  color: $color_orange;
+  background: #FFF;
+  padding: .5em 2em;
+  font-size: 1.2em;
+  font-weight: 100;
+  letter-spacing: 1px;
+  transition: all .4s ease;
+  text-decoration: none;
 
   &:hover {
     font-size: 1.3em;
