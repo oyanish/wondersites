@@ -5,7 +5,7 @@
                 <hr class="footer-underline">
                 <div class="logo-section">
                     <div class="logo-text">
-	                    <?php get_template_part( 'img/inline', 'wondersites-logo-inversed.svg' ); ?>
+                        <a href="<?php echo site_url(); ?>"><?php get_template_part( 'img/inline', 'wondersites-logo-inverted.svg' ); ?></a>
                         <span class="catchphrase">The website you need for the clients you want.</span>
                     </div>
                     <div class="footer-social">
