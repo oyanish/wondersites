@@ -6,10 +6,15 @@
 		<?php wp_head(); ?>
 	</head>
 	<body>
-		<header class="main-header">
+
+		<header class="main-header <?php echo ! is_front_page() ? 'white' : null ?> ">
             <div class="logo">
-                <a href="http://www.wondersites.dev">
-                    <?php get_template_part( 'img/inline', 'wondersites-logo.svg' ); ?>
+                <a href="<?php echo site_url(); ?>">
+
+                    <?php is_front_page()
+                        ? get_template_part( 'img/inline', 'wondersites-logo.svg' )
+                        : get_template_part( 'img/inline', 'wondersites-logo-inverted.svg' );
+                    ?>
                     <span class="slogan">Design | Development | Marketing</span>
                 </a>
             </div>

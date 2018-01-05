@@ -1,4 +1,4 @@
-// GENERAL HEADER SETTINGS
+// FRONT PAGE HEADER
 .main-header {
   background: #000;
   display: flex;
@@ -118,6 +118,34 @@
       }
 
       a {
+        color: $color_orange;
+      }
+    }
+  }
+}
+
+//PAGE HEADER
+
+.main-header.white {
+  background: none;
+
+  .logo {
+    span {
+      display: none;
+    }
+  }
+
+  .mobile-menu-toggle {
+    color: #000;
+  }
+
+  .primary-menu {
+    ul {
+      li a {
+        color: #000;
+      }
+
+      .button-quote a {
         color: $color_orange;
       }
     }
