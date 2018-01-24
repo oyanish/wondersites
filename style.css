@@ -733,82 +733,171 @@ h3 {
         font-size: 19px;
         font-weight: 100; }
 
-.about-us {
-  background: #f4f4f4;
-  border-bottom: 1px solid #4E9FF3; }
-  .about-us h1 {
-    margin: 0;
-    text-align: center;
-    padding-top: 1em; }
-  .about-us p {
-    text-align: center;
-    line-height: 1.6;
-    width: 80%;
-    margin: 0 auto;
-    padding: 1.5em 0;
-    font-size: 1.1em; }
+.about-us-banner {
+  background-image: url("img/wondersites-about-us.JPG");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 40vh; }
+  @media screen and (min-width: 768px) {
+    .about-us-banner {
+      height: 53vh; } }
+  @media screen and (min-width: 1185px) {
+    .about-us-banner {
+      height: 63vh;
+      background-position: center; } }
+  @media screen and (min-width: 1440px) {
+    .about-us-banner {
+      height: 91vh; } }
+  .about-us-banner .container {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: none; }
+    .about-us-banner .container h1 {
+      color: #FFF;
+      text-transform: uppercase;
+      font-size: 3em;
+      letter-spacing: 2px;
+      font-family: 'AmaticSC-Regular', 'sans-serif';
+      margin-top: 15px; }
+      @media screen and (min-width: 768px) {
+        .about-us-banner .container h1 {
+          font-size: 4em;
+          margin-top: 50px; } }
+      @media screen and (min-width: 1440px) {
+        .about-us-banner .container h1 {
+          font-size: 6em; } }
+      .about-us-banner .container h1 .blue {
+        color: #4E9FF3; }
 
-.team-leaders .container {
+.about-us-text {
+  padding: 20px;
+  font-size: 1.2em;
+  letter-spacing: .8px;
+  line-height: 26px; }
+  @media screen and (min-width: 768px) {
+    .about-us-text {
+      padding: 40px; } }
+  @media screen and (min-width: 1185px) {
+    .about-us-text {
+      max-width: 1440px;
+      margin: 0 auto; } }
+
+.team-members {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0; }
+  @media screen and (min-width: 1024px) {
+    .team-members {
+      flex-direction: row;
+      max-width: 1440px;
+      margin: 20px auto; } }
+  .team-members .team-member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px 30px;
+    margin: 60px 20px;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.1); }
+    @media screen and (min-width: 768px) {
+      .team-members .team-member-card {
+        margin: 60px 40px; } }
+    @media screen and (min-width: 1024px) {
+      .team-members .team-member-card {
+        margin: 60px 20px; } }
+    .team-members .team-member-card img {
+      border-radius: 50%;
+      margin-top: -65px; }
+    .team-members .team-member-card .name {
+      font-family: 'AvenirNext-UltraLight', 'sans-serif';
+      font-size: 25px;
+      text-transform: uppercase;
+      padding: 20px 0;
+      font-weight: bold; }
+    .team-members .team-member-card .bio {
+      text-align: center;
+      letter-spacing: 1px;
+      line-height: 26px; }
+    .team-members .team-member-card .member-social-media {
+      margin: 20px 0; }
+      .team-members .team-member-card .member-social-media a {
+        font-size: 30px;
+        margin: 0 5px;
+        color: #4E9FF3; }
+
+.wondersites-partners {
+  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .team-leaders .container h2 {
-    margin: 0;
-    padding-top: 2em; }
-  .team-leaders .container .leader-blurbs .blurb {
+  @media screen and (min-width: 768px) {
+    .wondersites-partners {
+      margin: 20px 40px; } }
+  .wondersites-partners .text-container {
+    text-align: center; }
+    @media screen and (min-width: 1024px) {
+      .wondersites-partners .text-container {
+        max-width: 1024px; } }
+    .wondersites-partners .text-container h2 {
+      font-size: 35px;
+      letter-spacing: 1px; }
+    .wondersites-partners .text-container p {
+      line-height: 26px;
+      letter-spacing: .8px; }
+  .wondersites-partners .featured-partner {
+    background-color: #4E9FF3;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em; }
-    .team-leaders .container .leader-blurbs .blurb img {
-      padding: 1em 0; }
-    .team-leaders .container .leader-blurbs .blurb span {
-      font-size: 1.5em; }
-    .team-leaders .container .leader-blurbs .blurb p {
-      text-align: center;
-      line-height: 1.6;
-      font-size: 1.1em;
-      width: 70%;
-      margin: 0 auto;
-      padding: 1.5em 0; }
-
-.contact-us {
-  background: #f4f4f4;
-  border-top: 1px solid #4E9FF3; }
-  .contact-us .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 4em 0; }
-    .contact-us .container h2 {
-      font-size: 1.3em;
-      margin: 0; }
-    .contact-us .container .buttons-cta {
+    padding: 0 30px 30px;
+    margin: 100px 0 40px; }
+    @media screen and (min-width: 1024px) {
+      .wondersites-partners .featured-partner {
+        max-width: 1024px; } }
+    @media screen and (min-width: 1185px) {
+      .wondersites-partners .featured-partner {
+        margin-bottom: 4em; } }
+    .wondersites-partners .featured-partner img {
+      border-radius: 50%;
+      margin: -65px;
+      border: 7px solid #FFF; }
+    .wondersites-partners .featured-partner .text {
+      color: #FFF;
+      padding-top: 80px;
       display: flex;
       flex-direction: column;
-      align-items: center; }
-      .contact-us .container .buttons-cta button {
-        margin: 1em 0; }
-
-@media screen and (min-width: 768px) {
-  .team-leaders .container h2,
-  .contact-us .container h2 {
-    font-size: 1.9em; }
-  .contact-us .container .buttons-cta {
-    display: flex;
-    flex-direction: row;
-    align-items: center; }
-    .contact-us .container .buttons-cta button {
-      margin: 1em; } }
-
-@media screen and (min-width: 1024px) {
-  .team-leaders .container .leader-blurbs {
-    display: flex;
-    flex-direction: row;
-    padding: 3em 0; }
-    .team-leaders .container .leader-blurbs .blurb {
-      width: 45%;
-      margin: 0 auto; } }
+      align-items: center;
+      letter-spacing: .8px;
+      line-height: 26px; }
+      .wondersites-partners .featured-partner .text .title {
+        text-transform: uppercase;
+        font-size: 15px;
+        color: #000; }
+      .wondersites-partners .featured-partner .text .name {
+        font-family: 'AvenirNext-UltraLight', 'sans-serif';
+        font-size: 25px;
+        text-transform: uppercase;
+        padding: 10px 0 5px; }
+      .wondersites-partners .featured-partner .text .company {
+        text-transform: uppercase; }
+      .wondersites-partners .featured-partner .text .bio {
+        padding: 15px 0;
+        text-align: center; }
+    .wondersites-partners .featured-partner .partner-social-media a {
+      font-size: 30px;
+      margin: 0 5px;
+      color: #FFF; }
+  .wondersites-partners h3 {
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: .8px; }
+  .wondersites-partners .become-a-partner {
+    margin: 20px 0 50px;
+    letter-spacing: 1px; }
 
 .service-banner {
   background-image: url("img/services-banner-photo.jpeg");
@@ -997,6 +1086,97 @@ h3 {
     .service-cta .service-cta-buttons .orange-button {
       background-color: #E67E22;
       border: 1px solid #E67E22; }
+
+.contact-form-info {
+  max-width: 1200px;
+  margin: 0 auto; }
+  .contact-form-info .contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media screen and (min-width: 1024px) {
+      .contact-form-info .contact-text {
+        margin-top: 45px; } }
+    .contact-form-info .contact-text h1 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px; }
+    .contact-form-info .contact-text span {
+      text-align: center;
+      padding: 20px;
+      font-size: 18px;
+      letter-spacing: 1px;
+      line-height: 25px;
+      max-width: 800px; }
+    .contact-form-info .contact-text i {
+      font-size: 40px; }
+  @media screen and (min-width: 768px) {
+    .contact-form-info .info-form-container {
+      display: flex;
+      padding: 40px 0; } }
+  .contact-form-info .info-form-container .contact-information {
+    max-width: 300px;
+    margin: 0 auto; }
+    @media screen and (min-width: 1185px) {
+      .contact-form-info .info-form-container .contact-information {
+        max-width: 370px; } }
+    .contact-form-info .info-form-container .contact-information .contact-card {
+      text-align: center;
+      margin: 40px 0; }
+      @media screen and (min-width: 1440px) {
+        .contact-form-info .info-form-container .contact-information .contact-card {
+          margin: 40px; } }
+      .contact-form-info .info-form-container .contact-information .contact-card svg {
+        width: 70px; }
+        @media screen and (min-width: 768px) {
+          .contact-form-info .info-form-container .contact-information .contact-card svg {
+            width: 55px; } }
+      .contact-form-info .info-form-container .contact-information .contact-card h3 {
+        font-size: 22px;
+        letter-spacing: 1px;
+        color: #4E9FF3;
+        padding: 15px 0; }
+      .contact-form-info .info-form-container .contact-information .contact-card span, .contact-form-info .info-form-container .contact-information .contact-card a {
+        letter-spacing: 1px;
+        line-height: 24px;
+        font-size: 18px; }
+      .contact-form-info .info-form-container .contact-information .contact-card a {
+        text-decoration: none;
+        color: #E67E22; }
+  @media screen and (min-width: 768px) {
+    .contact-form-info .info-form-container .contact-form {
+      width: 45%; } }
+  @media screen and (min-width: 1024px) {
+    .contact-form-info .info-form-container .contact-form {
+      width: 56%; } }
+
+.consultation-booking-text {
+  text-align: center;
+  margin-bottom: 30px; }
+  @media screen and (min-width: 768px) {
+    .consultation-booking-text {
+      width: 600px;
+      margin: 0 auto;
+      padding: 25px 0; } }
+  .consultation-booking-text h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 22px; }
+  .consultation-booking-text span {
+    letter-spacing: 1px;
+    color: #4E9FF3; }
+    @media screen and (min-width: 768px) {
+      .consultation-booking-text span {
+        font-size: 19px;
+        padding: 15px 0; } }
+  .consultation-booking-text i {
+    font-size: 40px;
+    display: block; }
+
+.calendly-inline-widget iframe .history body.page-loaded .branding {
+  display: none; }
+  .calendly-inline-widget iframe .history body.page-loaded .branding .badge {
+    display: none; }
 
 .gform_wrapper {
   width: 90%;
