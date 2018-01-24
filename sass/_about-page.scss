@@ -1,116 +1,229 @@
-.about-us {
-  background: $color_grey_light;
-  border-bottom: 1px solid $color_blue;
+.about-us-banner {
+  background-image: url("img/wondersites-about-us.JPG");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 40vh;
 
-  h1 {
-    margin: 0;
-    text-align: center;
-    padding-top: 1em;
+  @include tablet-portrait {
+    height: 53vh;
   }
 
-  p {
-    text-align: center;
-    line-height: 1.6;
-    width: 80%;
-    margin: 0 auto;
-    padding: 1.5em 0;
-    font-size: 1.1em;
+  @include desktop {
+    height: 63vh;
+    background-position: center;
+  }
+
+  @include widescreen {
+    height: 91vh;
+  }
+
+  .container {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: none;
+
+    h1 {
+      color: #FFF;
+      text-transform: uppercase;
+      font-size: 3em;
+      letter-spacing: 2px;
+      font-family: 'AmaticSC-Regular', 'sans-serif';
+      margin-top: 15px;
+
+      @include tablet-portrait {
+        font-size: 4em;
+        margin-top: 50px;
+      }
+
+      @include widescreen {
+        font-size: 6em;
+      }
+
+      .blue {
+        color: $color_blue;
+      }
+    }
   }
 }
 
-.team-leaders .container {
+.about-us-text {
+  padding: 20px;
+  font-size: 1.2em;
+  letter-spacing: .8px;
+  line-height: 26px;
+
+  @include tablet-portrait {
+    padding: 40px;
+  }
+
+  @include desktop {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.team-members {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+
+  @include tablet-landscape {
+    flex-direction: row;
+    max-width: 1440px;
+    margin: 20px auto;
+  }
+
+  .team-member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px 30px;
+    margin: 60px 20px;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, .10);
+
+    @include tablet-portrait {
+      margin: 60px 40px;
+    }
+    @include tablet-landscape {
+      margin: 60px 20px;
+    }
+
+    img {
+      border-radius: 50%;
+      margin-top: -65px;
+    }
+
+    .name {
+      font-family: 'AvenirNext-UltraLight', 'sans-serif';
+      font-size: 25px;
+      text-transform: uppercase;
+      padding: 20px 0;
+      font-weight: bold;
+    }
+
+    .bio {
+      text-align: center;
+      letter-spacing: 1px;
+      line-height: 26px;
+    }
+
+    .member-social-media {
+      margin: 20px 0;
+
+      a {
+        font-size: 30px;
+        margin: 0 5px;
+        color: $color_blue;
+      }
+    }
+  }
+}
+
+.wondersites-partners {
+  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  h2 {
-    margin: 0;
-    padding-top: 2em;
+  @include tablet-portrait {
+    margin: 20px 40px;
   }
 
-  .leader-blurbs {
-    .blurb {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2em;
+  .text-container {
+    text-align: center;
 
-      img {
-        padding: 1em 0;
-      }
+    @include tablet-landscape {
+      max-width: 1024px;
+    }
 
-      span {
-        font-size: 1.5em;
-      }
+    h2 {
+      font-size: 35px;
+      letter-spacing: 1px;
+    }
 
-      p {
-        text-align: center;
-        line-height: 1.6;
-        font-size: 1.1em;
-        width: 70%;
-        margin: 0 auto;
-        padding: 1.5em 0;
-      }
+    p {
+      line-height: 26px;
+      letter-spacing: .8px;
     }
   }
-}
 
-.contact-us {
-  background: $color_grey_light;
-  border-top: 1px solid $color_blue;
-
-  .container {
+  .featured-partner {
+    background-color: $color_blue;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, .10);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4em 0;
+    padding: 0 30px 30px;
+    margin: 100px 0 40px;
 
-    h2 {
-      font-size: 1.3em;
-      margin: 0;
+    @include tablet-landscape {
+      max-width: 1024px;
     }
 
-    .buttons-cta {
+    @include desktop {
+      margin-bottom: 4em;
+    }
+
+    img {
+      border-radius: 50%;
+      margin: -65px;
+      border: 7px solid #FFF;
+    }
+
+    .text {
+      color: #FFF;
+      padding-top: 80px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      button {
-        margin: 1em 0;
+      letter-spacing: .8px;
+      line-height: 26px;
+
+      .title {
+        text-transform: uppercase;
+        font-size: 15px;
+        color: #000;
+      }
+
+      .name {
+        font-family: 'AvenirNext-UltraLight', 'sans-serif';
+        font-size: 25px;
+        text-transform: uppercase;
+        padding: 10px 0 5px;
+      }
+
+      .company {
+        text-transform: uppercase;
+      }
+
+      .bio {
+        padding: 15px 0;
+        text-align: center;
+      }
+    }
+
+    .partner-social-media {
+
+      a {
+        font-size: 30px;
+        margin: 0 5px;
+        color: #FFF;
       }
     }
   }
-}
 
-@media screen and (min-width: 768px) {
-  .team-leaders .container h2,
-  .contact-us .container h2 {
-    font-size: 1.9em;
+  h3 {
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: .8px;
   }
 
-  .contact-us .container {
-    .buttons-cta {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-
-      button {
-        margin: 1em;
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .team-leaders .container {
-    .leader-blurbs {
-      display: flex;
-      flex-direction: row;
-      padding: 3em 0;
-
-      .blurb {
-        width: 45%;
-        margin: 0 auto;
-      }
-    }
+  .become-a-partner {
+    margin: 20px 0 50px;
+    letter-spacing: 1px;
   }
 }
