@@ -1,56 +1,85 @@
 .about-us-banner {
   background-image: url("img/wondersites-about-us.JPG");
-  background-size: 100%;
-  background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
-  height: 40vh;
+  background-repeat: no-repeat;
+  background-position: center;
 
   @include tablet-portrait {
-    height: 53vh;
+    height: 38vh;
   }
 
   @include desktop {
-    height: 63vh;
-    background-position: center;
+    height: 50vh;
   }
 
   @include widescreen {
-    height: 91vh;
+    height: 60vh;
   }
 
   .container {
-    background-color: rgba(0, 0, 0, 0.4);
-    height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.55);
     max-width: none;
 
-    h1 {
-      color: #FFF;
-      text-transform: uppercase;
-      font-size: 3em;
-      letter-spacing: 2px;
-      font-family: 'AmaticSC-Regular', 'sans-serif';
-      margin-top: 15px;
+    @include tablet-portrait {
+      height: 100%;
+    }
 
-      @include tablet-portrait {
-        font-size: 4em;
-        margin-top: 50px;
+    .about-banner-text {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      @include tablet-landscape {
+        margin-top: 60px;
       }
 
-      @include widescreen {
-        font-size: 6em;
+      h1 {
+        color: #FFF;
+        text-transform: uppercase;
+        font-size: 3em;
+        letter-spacing: 2px;
+        font-family: 'AmaticSC-Regular', 'sans-serif';
+        margin-bottom: 15px;
+
+        @include tablet-portrait {
+          font-size: 4em;
+        }
+
+        @include widescreen {
+          font-size: 6em;
+        }
+
+        .blue {
+          color: $color_blue;
+        }
       }
 
-      .blue {
-        color: $color_blue;
+      span {
+        font-size: 1.2em;
+        color: #FFF;
+        padding-bottom: 15px;
+        letter-spacing: 1.5px;
+
+        @include tablet-portrait {
+          font-size: 1.4em;
+        }
+
+        @include tablet-landscape {
+          font-size: 1.8em;
+        }
+      }
+
+      i {
+        font-size: 3em;
+        color: #FFF;
       }
     }
   }
 }
 
-.about-us-text {
+.about-us-text-and-list {
   padding: 20px;
   font-size: 1.2em;
   letter-spacing: .8px;
@@ -63,6 +92,60 @@
   @include desktop {
     max-width: 1440px;
     margin: 0 auto;
+  }
+
+  .about-text {
+    font-size: 18px;
+
+    @include desktop {
+      font-size: 21px;
+    }
+
+    .consultation {
+      color: $color_blue;
+    }
+  }
+
+  .about-list {
+    margin-top: 50px;
+
+    @include desktop {
+      margin-top: 80px;
+    }
+
+    h2 {
+      text-align: center;
+      letter-spacing: 1.5px;
+      line-height: 1.4em;
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+
+      @include tablet-landscape {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      span {
+        margin-bottom: 25px;
+
+        @include tablet-landscape {
+          width: 45%;
+          margin-bottom: 40px;
+          letter-spacing: 1px;
+          line-height: 27px;
+        }
+
+        i {
+          color: green;
+          padding-right: 15px;
+        }
+      }
+    }
   }
 }
 

@@ -2,14 +2,31 @@
 
 <section class="about-us-banner">
 	<div class="container">
-		<h1><span class="blue">Our</span> story</h1>
+        <div class="about-banner-text">
+            <h1><span class="blue">Our</span> story</h1>
+            <span>Find out what makes us different</span>
+            <i class="fa fa-angle-down"></i>
+        </div>
 	</div>
 </section>
 
-<section class="about-us-text">
-    <p>Wondersites was built upon the fearless drive of living outside the box. We are a small, dedicated team of visionaries who are passionate about leveraging the power of online tools to help our clients tell their unique story. We constantly thrive to live outside of our comfort zone, thus stimulating our creativity to reach its highest potential. Thirty percent of our resources are dedicated to growing our knowledge and keeping up with the latest tools and technologies to ensure that our clients stand out from the crowd. We are committed to helping our clients succeed, because your success is our success.</p>
-    <p>In 2015, Anton and Olha decided to quit their jobs and buy a 1979 Volkswagen Westfalia which they fully restored by themselves, a challenge that proved to be difficult. We did not know anything about restoring a vintage car, but with alot of dedication and perseverance we managed to restore it fully from its body and electrical wiring down to its engine and transmission. Everyone around us thought that we were crazy, but it took a visionary to see what we saw. It took us a year, but we did it and in 2016 we left on our PanAmerican coast to coast adventure that took us serveral months through three different countries. During that time, we worked on building our own business, Wondersites, in which we put the same kind of dedication and perseverance.</p>
-    <p>Thanks to our unique lifestyle, we were able to meet with clients all over Canada and Unites States. Want to have a unique experience? Meet us for a consultation in our rolling office. The coffee is on us!</p>
+<section class="about-us-text-and-list">
+    <div class="about-text">
+        <p>Wondersites was built upon the fearless drive of living outside the box. We are a small, dedicated team of visionaries who are passionate about leveraging the power of online tools to help our clients tell their unique story. In 2015, Anton and Olha bought a 1979 Volkswagen Westfalia (pictured above) which they fully restored themselves and drove throughout three countries over several months. This experience has taught us dedication and perseverance, which we apply daily to our business.</p>
+        <span class="consultation">Want to have a unique experience? Meet us for a consultation in our rolling office. The coffee is on us!</span>
+    </div>
+    <div class="about-list">
+        <h2>The Wondersites difference</h2>
+        <hr class="underline">
+        <div class="list">
+            <span><i class="fa fa-check"></i>We strive to provide the best customer experience there is, so you can be sure that when you contact us you won't be speaking to an assistant.</span>
+            <span><i class="fa fa-check"></i>At wondersites, we know that time is money, so we don't like to make our clients wait. You can count on quick responses and have your services up promptly.</span>
+            <span><i class="fa fa-check"></i>Thirty percent of our resources are dedicated to growing our knowledge and keeping up with the latest tools and technologies to ensure that our clients stand out from the crowd.</span>
+            <span><i class="fa fa-check"></i>Nobody likes to be pressured by salespeople, including us. That's why you can trust us when it comes to offering you custom solutions your business can benefit from. We do not believe in selling services for our benefit.</span>
+            <span><i class="fa fa-check"></i>We are your one stop for all your digital solution needs. No more trying to keep up with different people and services, we provide a fully integrated, end to end flow digital experience.</span>
+            <span><i class="fa fa-check"></i>We are your one stop for all your digital solution needs. No more trying to keep up with different people and services, we provide a fully integrated, end to end flow digital experience.</span>
+        </div>
+    </div>
 </section>
 
 <section class="team-members">
