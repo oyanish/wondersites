@@ -405,7 +405,8 @@
   }
 
   img {
-    padding: 15px;
+    padding: 25px 15px;
+    width: 200px;
 
     @include tablet-portrait {
       padding: 15px 25px;

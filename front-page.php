@@ -102,14 +102,14 @@
 </section>
 
 <section class="homepage-client-logos container">
-    <img width="150" height="121" src="<?php bloginfo('template_url')?>/img/logo-TIS.png" alt="">
-    <img width="150" height="56" src="<?php bloginfo('template_url')?>/img/logo-dvlop.png" alt="">
-    <img width="150" height="48" src="<?php bloginfo('template_url')?>/img/logo-iava.png" alt="">
-    <img width="150" height="86" src="<?php bloginfo('template_url')?>/img/logo-jbenson.png" alt="">
-    <img width="150" height="57" src="<?php bloginfo('template_url')?>/img/logo-LH.png" alt="">
-    <img width="150" height="30" src="<?php bloginfo('template_url')?>/img/logo-telus.png" alt="">
-    <img width="150" height="27" src="<?php bloginfo('template_url')?>/img/logo-yellow.png" alt="">
-    <img width="150" height="46" src="<?php bloginfo('template_url')?>/img/logo-CADedifice.png" alt="">
+    <img src="<?php bloginfo('template_url')?>/img/logo-TIS.png" alt="">
+    <img src="<?php bloginfo('template_url')?>/img/logo-dvlop.png" alt="">
+    <img src="<?php bloginfo('template_url')?>/img/logo-iava.png" alt="">
+    <img src="<?php bloginfo('template_url')?>/img/logo-jbenson.png" alt="">
+    <img src="<?php bloginfo('template_url')?>/img/logo-LH.png" alt="">
+    <img src="<?php bloginfo('template_url')?>/img/logo-telus.png" alt="">
+    <img src="<?php bloginfo('template_url')?>/img/logo-yellow.png" alt="">
+    <img src="<?php bloginfo('template_url')?>/img/logo-CADedifice.png" alt="">
 </section>
 
 <section class="homepage-client-reviews">
