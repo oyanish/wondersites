@@ -1,0 +1,118 @@
+.service-cta-form {
+
+  @include tablet-portrait {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 70px 0 125px;
+  }
+
+  @include tablet-landscape {
+    padding: 125px 0;
+  }
+
+  .service-cta {
+    padding-bottom: 40px;
+
+    @include tablet-portrait {
+      width: 45%;
+      max-width: 520px;
+      box-shadow: 0 10px 50px 0 rgba(0, 0, 0, .10);
+      background: #FFF;
+      padding: 65px 0 0 3%;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2em 1em;
+      text-align: center;
+
+      h2 {
+        font-size: 2em;
+        font-weight: 900;
+        margin-bottom: .5em;
+      }
+
+      p {
+        color: $color_grey_dark;
+        text-align: center;
+        max-width: 720px;
+        letter-spacing: 1px;
+
+        &.cta-text {
+          margin-bottom: 40px;
+        }
+      }
+
+      .buttons-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .orange-button {
+          border: 1px solid $color_orange;
+          color: $color_orange;
+        }
+      }
+    }
+  }
+
+  .service-contact-form {
+
+    hr {
+      @include tablet-portrait {
+        display: none;
+      }
+    }
+
+    @include tablet-portrait {
+      width: 45%;
+      max-width: 520px;
+      background: #FFF;
+      transform: scale(1.10);
+      box-shadow: 0 15px 60px 0 rgba(0, 0, 0, .30);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      svg {
+        width: 100px;
+        height: auto;
+        margin-top: 30px;
+      }
+
+      h2 {
+        color: $color_grey_dark;
+        font-size: 2em;
+        padding: 0 20px;
+        text-align: center;
+      }
+
+      .contact-form-text {
+        color: $color_grey_dark;
+        padding: 0 20px;
+        line-height: 1.4;
+
+        .email-address {
+          display: inline-block;
+          text-decoration: none;
+          color: $color_blue;
+          font-size: 1.3em;
+          font-weight: bold;
+          font-family: 'Avenir-Book', 'sans-serif';
+          padding: 10px 0;
+
+          i {
+            font-size: 19px;
+            font-weight: 100;
+          }
+        }
+      }
+    }
+  }
+}
