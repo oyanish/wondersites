@@ -1,94 +1,72 @@
+.contact-page-banner {
+  background-image: url("img/contact-page-banner-picture.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
 .contact-form-info {
   max-width: 1200px;
   margin: 0 auto;
 
-  .contact-text {
+  @include tablet-portrait {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 40px 0;
+  }
 
-    @include tablet-landscape {
-      margin-top: 45px;
+  .contact-information {
+    max-width: 300px;
+    margin: 0 auto;
+
+    @include desktop {
+      max-width: 370px;
     }
 
-    h1 {
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
-    }
-
-    span {
+    .contact-card {
       text-align: center;
-      padding: 20px;
-      font-size: 18px;
-      letter-spacing: 1px;
-      line-height: 25px;
-      max-width: 800px;
-    }
+      margin: 40px 0;
 
-    i {
-      font-size: 40px;
+      @include widescreen {
+        margin: 40px;
+      }
+
+      svg {
+        width: 70px;
+
+        @include tablet-portrait {
+          width: 55px;
+        }
+      }
+
+      h3 {
+        font-size: 22px;
+        letter-spacing: 1px;
+        color: $color_blue;
+        padding: 15px 0;
+      }
+
+      span, a {
+        letter-spacing: 1px;
+        line-height: 24px;
+        font-size: 18px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $color_orange;
+      }
     }
   }
 
-  .info-form-container {
+  .contact-form {
     @include tablet-portrait {
-      display: flex;
-      padding: 40px 0;
+      width: 45%;
     }
 
-    .contact-information {
-      max-width: 300px;
-      margin: 0 auto;
-
-      @include desktop {
-        max-width: 370px;
-      }
-
-      .contact-card {
-        text-align: center;
-        margin: 40px 0;
-
-        @include widescreen {
-          margin: 40px;
-        }
-
-        svg {
-          width: 70px;
-
-          @include tablet-portrait {
-            width: 55px;
-          }
-        }
-
-        h3 {
-          font-size: 22px;
-          letter-spacing: 1px;
-          color: $color_blue;
-          padding: 15px 0;
-        }
-
-        span, a {
-          letter-spacing: 1px;
-          line-height: 24px;
-          font-size: 18px;
-        }
-
-        a {
-          text-decoration: none;
-          color: $color_orange;
-        }
-      }
-    }
-
-    .contact-form {
-      @include tablet-portrait {
-        width: 45%;
-      }
-
-      @include tablet-landscape {
-        width: 56%;
-      }
+    @include tablet-landscape {
+      width: 56%;
     }
   }
 }
