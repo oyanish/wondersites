@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<section class="service-banner">
+<section class="page-banner services-page-banner">
 	<div class="container">
-        <div class="services-banner-text">
+        <div class="page-banner-text">
             <h1>Services</h1>
             <hr class="underline">
             <span>We offer a wide range of design, development and marketing services. As small business owners ourselves, we know that time is money, so our most popular products and services are now available to you at a click of the button.</span>
@@ -74,38 +74,6 @@
     </div>
 </section>
 
-<section class="service-packages">
-	<?php $package_cards = new WP_Query( array( 'post_type' => 'packages' ) ); ?>
-    <h2>Already know what you need? Shop our most popular services</h2>
-    <div class="packages-container">
-        <div class="featured-packages">
-		    <?php if ( $package_cards->have_posts() ) : while ( $package_cards->have_posts() ) : $package_cards->the_post(); ?>
-                <div class="package-card">
-                    <div class="package-card-image">
-                        <img src="<?php echo get_field( 'package_icon' )['sizes']['medium']; ?>" alt="">
-                    </div>
-                    <div class="package-card-info">
-                        <span class="title-one"><?php esc_html( the_field( 'package_preview_title_1' ) ); ?></span>
-                        <span class="title-two"><?php esc_html( the_field( 'package_preview_title_2' ) ); ?></span>
-					    <?php esc_html( the_field( 'package_description' ) ); ?>
-                        <span class="price">$<?php esc_html( the_field( 'package_price' ) ); ?></span>
-                        <a class="small-orange" href="<?php the_permalink(); ?>">Buy now</a>
-                    </div>
-                </div>
-		    <?php endwhile;
-			    wp_reset_postdata(); endif; ?>
-        </div>
-    </div>
-</section>
+<?php get_template_part('partials/service_cta_form');
 
-<section class="service-cta">
-    <h2>Not quite sure what you need yet? We can help!</h2>
-    <p>Let's chat! We will ask you the right questions to determine what products and services would yield the best results for your business growth.</p>
-    <div class="service-cta-buttons">
-        <a class="wondersites-blue-button" href="<?php echo esc_url( site_url(  ) ); ?>"><span>Answer a few questions</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-        <p>or</p>
-        <a class="wondersites-blue-button orange-button" href="<?php echo esc_url( site_url(  ) ); ?>"><span>Schedule a call</span><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-    </div>
-</section>
-
-<?php get_footer(); ?>
+get_footer(); ?>
