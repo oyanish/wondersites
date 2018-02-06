@@ -1,0 +1,33 @@
+.single-package {
+  width: 330px;
+  border: 3px solid $color_grey_light;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 30px;
+
+  a {
+    text-decoration: none;
+
+    img {
+      width: 100px;
+    }
+
+    span {
+      display: block;
+      letter-spacing: 1px;
+    }
+
+    .service-card-subtitle {
+      font-family: 'AmaticSC-Regular', 'sans-serif';
+      font-size: 1.5em;
+      color: $color_blue;
+      padding: 20px 0 10px;
+    }
+
+    .service-card-title {
+      color: $color_grey_dark;
+      font-size: 1.2em;
+      padding-bottom: 20px;
+    }
+  }
+}
