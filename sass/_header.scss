@@ -100,6 +100,15 @@
       }
     }
 
+    &.shopping-cart {
+      a {
+        i {
+          font-size: 1.5em;
+          color: $color_blue;
+        }
+      }
+    }
+
     &.button-quote {
       font-size: 1.3em;
       border: 1px solid $color_orange;

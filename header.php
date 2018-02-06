@@ -26,7 +26,8 @@
                 <ul>
 	                <?php
 	                wp_nav_menu( array('theme_location'=>'header_menu')); ?>
-                    <li class="button button-quote"><a href="#">Start now</a></li>
+                    <li class="shopping-cart"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                    <li class="button button-quote"><a href="#">Get a quote</a></li>
                 </ul>
             </nav>
 		</header>
