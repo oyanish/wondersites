@@ -15,6 +15,7 @@
                         <div class="social-links">
                             <a href="#"><i class="fa fa-facebook-square"></i></a>
                             <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                            <a href="#"><i class="fa fa-shopping-cart"></i></a>
                         </div>
                     </div>
                 </div>
