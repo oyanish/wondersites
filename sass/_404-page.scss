@@ -33,7 +33,7 @@
 }
 
 .row:after {
-  content: "";
+  content: '';
   display: block;
   clear: both;
 }
@@ -41,7 +41,7 @@
 .col--half {
   float: left;
   vertical-align: top;
-  width: 50%;
+  width: 51%;
 }
 
 .col--third {
@@ -49,9 +49,6 @@
   vertical-align: top;
   width: 33.3%;
 }
-
-
-
 
 /* ==========================================
    Bus
@@ -61,22 +58,30 @@
   /* Font size set to 5em so that 0.01em = 1px */
   font-size: 5em;
   height: 10em;
-  margin:1em auto;
+  margin: 1em auto;
   position: relative;
   width: 10em;
 }
 
-.bus--first { margin-top: 0; }
-.bus--full  { font-size: 5vw; @include widescreen { font-size: 4vw; }}
-.bus--half  { font-size: 4vw; }
-.bus--third { font-size: 3vw; }
+.bus--first {
+  margin-top: 0;
+}
+.bus--full {
+  font-size: 5vw;
+  @include widescreen {
+    font-size: 4vw;
+  }
+}
+.bus--half {
+  font-size: 4vw;
+}
+.bus--third {
+  font-size: 3vw;
+}
 
 .bus * {
   position: absolute;
 }
-
-
-
 
 /* ==========================================
    Body
@@ -99,22 +104,37 @@
 
 /* Colors */
 .bus--top-green .bus__body--top,
-.bus--bottom-green .bus__body--bottom    { background: #82a53d; }
+.bus--bottom-green .bus__body--bottom {
+  background: #82a53d;
+}
 .bus--top-orange .bus__body--top,
-.bus--bottom-orange .bus__body--bottom   { background: #ee6615; }
+.bus--bottom-orange .bus__body--bottom {
+  background: #ee6615;
+}
 .bus--top-yellow .bus__body--top,
-.bus--bottom-yellow .bus__body--bottom   { background: #f7c125; }
+.bus--bottom-yellow .bus__body--bottom {
+  background: #f7c125;
+}
 .bus--top-red .bus__body--top,
-.bus--bottom-red .bus__body--bottom      { background: #bb211a; }
+.bus--bottom-red .bus__body--bottom {
+  background: #bb211a;
+}
 .bus--top-blue .bus__body--top,
-.bus--bottom-blue .bus__body--bottom     { background: #1f77b5; }
+.bus--bottom-blue .bus__body--bottom {
+  background: #1f77b5;
+}
 .bus--top-tan .bus__body--top,
-.bus--bottom-tan .bus__body--bottom      { background: #c5b889; }
+.bus--bottom-tan .bus__body--bottom {
+  background: #c5b889;
+}
 .bus--top-white .bus__body--top,
-.bus--bottom-white .bus__body--bottom    { background: #e3e2d8; }
+.bus--bottom-white .bus__body--bottom {
+  background: #e3e2d8;
+}
 .bus--top-brown .bus__body--top,
-.bus--bottom-brown .bus__body--bottom    { background: #684d43; }
-
+.bus--bottom-brown .bus__body--bottom {
+  background: #684d43;
+}
 
 .roof {
   border-radius: 50% 50% 0 0 / 60% 60% 0 0;
@@ -166,7 +186,7 @@
 .bump {
   border-radius: 1.5% 1.5% 1.5% 1.5% / 50% 50% 50% 50%;
   box-shadow: inset 0 -0.18em 0 0 rgba(0, 0, 0, 0.15),
-  inset 0 0.18em 0 0 rgba(255, 255, 255, 0.2);
+    inset 0 0.18em 0 0 rgba(255, 255, 255, 0.2);
   height: 0.36em;
   left: 1.08em;
   top: 3.83em;
@@ -203,9 +223,8 @@
 .grill {
   border-radius: 0.06em;
   box-shadow: inset 0 -0.03em 0 0 rgba(0, 0, 0, 0.15),
-  inset 0 0.03em 0 0 rgba(255, 255, 255, 0.2),
-  0 -0.03em 0 0 rgba(0, 0, 0, 0.15),
-  0 0.03em 0 0 rgba(255, 255, 255, 0.2);
+    inset 0 0.03em 0 0 rgba(255, 255, 255, 0.2),
+    0 -0.03em 0 0 rgba(0, 0, 0, 0.15), 0 0.03em 0 0 rgba(255, 255, 255, 0.2);
   height: 0.6em;
   left: 2.61em;
   top: 4.51em;
@@ -215,31 +234,13 @@
 .grill__hole {
   background: #333;
   border-radius: 0.02em;
-  box-shadow: 0.08em 0 0 0 #333,
-  0.16em 0 0 0 #333,
-  0.24em 0 0 0 #333,
-  0.32em 0 0 0 #333,
-  0.4em 0 0 0 #333,
-  0.48em 0 0 0 #333,
-  0.56em 0 0 0 #333,
-  0.64em 0 0 0 #333,
-  0.72em 0 0 0 #333,
-  0.8em 0 0 0 #333,
-  0.88em 0 0 0 #333,
-  0.96em 0 0 0 #333,
-  1.04em 0 0 0 #333,
-  1.12em 0 0 0 #333,
-  1.2em 0 0 0 #333,
-  1.28em 0 0 0 #333,
-  1.36em 0 0 0 #333,
-  1.44em 0 0 0 #333,
-  1.52em 0 0 0 #333,
-  1.6em 0 0 0 #333,
-  1.68em 0 0 0 #333,
-  1.76em 0 0 0 #333,
-  1.84em 0 0 0 #333,
-  1.92em 0 0 0 #333,
-  2em 0 0 0 #333;
+  box-shadow: 0.08em 0 0 0 #333, 0.16em 0 0 0 #333, 0.24em 0 0 0 #333,
+    0.32em 0 0 0 #333, 0.4em 0 0 0 #333, 0.48em 0 0 0 #333, 0.56em 0 0 0 #333,
+    0.64em 0 0 0 #333, 0.72em 0 0 0 #333, 0.8em 0 0 0 #333, 0.88em 0 0 0 #333,
+    0.96em 0 0 0 #333, 1.04em 0 0 0 #333, 1.12em 0 0 0 #333, 1.2em 0 0 0 #333,
+    1.28em 0 0 0 #333, 1.36em 0 0 0 #333, 1.44em 0 0 0 #333, 1.52em 0 0 0 #333,
+    1.6em 0 0 0 #333, 1.68em 0 0 0 #333, 1.76em 0 0 0 #333, 1.84em 0 0 0 #333,
+    1.92em 0 0 0 #333, 2em 0 0 0 #333;
   height: 0.42em;
   left: 0.13em;
   position: absolute;
@@ -250,9 +251,6 @@
 .grill__hole--right {
   left: 2.59em;
 }
-
-
-
 
 /* ==========================================
    Windshield
@@ -329,9 +327,6 @@
   top: -0.2em;
 }
 
-
-
-
 /* ==========================================
    Front Parts
    ========================================== */
@@ -340,7 +335,6 @@
   width: 100%;
   z-index: 40;
 }
-
 
 /* Wipers
    ========================================== */
@@ -403,7 +397,7 @@
   left: 0.02em;
   position: absolute;
   top: 0.06em;
-  width: 0.10em;
+  width: 0.1em;
 }
 
 .wiper-blade {
@@ -439,7 +433,6 @@
   width: 0.4em;
 }
 
-
 .wiper-left {
   left: 1.92em;
   transform: rotate(-6deg);
@@ -452,10 +445,10 @@
 }
 
 @keyframes wiper-wiping-right {
-  0%   {
+  0% {
     transform: rotate(0deg);
   }
-  50%  {
+  50% {
     transform: rotate(90deg);
   }
   100% {
@@ -471,17 +464,16 @@
 }
 
 @keyframes wiper-wiping-left {
-  0%   {
+  0% {
     transform: rotate(-6deg);
   }
-  50%  {
+  50% {
     transform: rotate(84deg);
   }
   100% {
     transform: rotate(-6deg);
   }
 }
-
 
 /* Logo
    ========================================== */
@@ -498,11 +490,11 @@
 .vw-logo__v {
   background: #f3e5c0;
   display: block;
-  height: 0.10em;
+  height: 0.1em;
   left: 0.35em;
   position: absolute;
   top: 0.29em;
-  width: 0.10em;
+  width: 0.1em;
 }
 
 .vw-logo__v:after,
@@ -525,11 +517,11 @@
 .vw-logo__w {
   background: #f3e5c0;
   display: block;
-  height: 0.10em;
+  height: 0.1em;
   left: 0.35em;
   position: absolute;
   top: 0.41em;
-  width: 0.10em;
+  width: 0.1em;
 }
 
 .vw-logo__w:after,
@@ -550,7 +542,7 @@
 }
 
 .vw-logo__w__leg-l,
-.vw-logo__w__leg-r  {
+.vw-logo__w__leg-r {
   background: #f3e5c0;
   display: block;
   height: 0.6em;
@@ -590,12 +582,9 @@
 }
 
 .vw-logo--shadow .vw-logo__w__leg-l,
-.vw-logo--shadow .vw-logo__w__leg-r  {
+.vw-logo--shadow .vw-logo__w__leg-r {
   background: rgba(0, 0, 0, 0.15);
 }
-
-
-
 
 /* Lights
    ========================================== */
@@ -633,18 +622,26 @@
 }
 
 @keyframes directional-blinking {
-  0%   { opacity: 1; }
-  20%  { opacity: 0; }
-  50%  { opacity: 0; }
-  70%  { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
 }
 
 .headlight {
   background: #eee;
-  background: linear-gradient(to bottom, #eee 50% , #555 50%);
+  background: linear-gradient(to bottom, #eee 50%, #555 50%);
   border-radius: 50%;
   box-shadow: 0 -0.12em 0 0 rgba(0, 0, 0, 0.15),
-  0 0.12em 0 0 rgba(255, 255, 255, 0.2);
+    0 0.12em 0 0 rgba(255, 255, 255, 0.2);
   height: 1.14em;
   left: 1.64em;
   position: absolute;
@@ -654,7 +651,7 @@
 
 .headlight:after {
   background: #eee;
-  background: linear-gradient(to bottom, #aaa 50% , #eee 50%);
+  background: linear-gradient(to bottom, #aaa 50%, #eee 50%);
   border-radius: 50%;
   content: '';
   height: 0.94em;
@@ -667,8 +664,7 @@
 
 .headlight:before {
   border-radius: 50%;
-  box-shadow: inset 0 0.08em 0 0 #ddd,
-  0 0.08em 0 0 #ccc;
+  box-shadow: inset 0 0.08em 0 0 #ddd, 0 0.08em 0 0 #ccc;
   content: '';
   height: 0.7em;
   left: 0.24em;
@@ -710,7 +706,7 @@
   background: rgba(255, 255, 255, 0.15);
   border-radius: 50%;
   box-shadow: inset 0 0 0.1em 0.02em rgba(255, 255, 255, 0.3),
-  0 0 0.1em 0.02em rgba(255, 255, 255, 0.3);
+    0 0 0.1em 0.02em rgba(255, 255, 255, 0.3);
   content: '';
   height: 0.5em;
   left: -0.3em;
@@ -724,7 +720,7 @@
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   box-shadow: inset 0 0 0.1em 0.02em rgba(255, 255, 255, 0.3),
-  0 0 0.1em 0.02em rgba(255, 255, 255, 0.3);
+    0 0 0.1em 0.02em rgba(255, 255, 255, 0.3);
   content: '';
   height: 0.3em;
   left: 1em;
@@ -772,13 +768,22 @@
 }
 
 @keyframes headlight-blinking {
-  0%   { opacity: 1; }
-  45%  { opacity: 1; }
-  55%  { opacity: 0; }
-  95%  { opacity: 0; }
-  100%  { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 
 /* Bumper
    ========================================== */
@@ -798,7 +803,7 @@
 }
 
 .bc-1 {
-  border-bottom: 0.04em solid rgba(0,0,0,0.3);
+  border-bottom: 0.04em solid rgba(0, 0, 0, 0.3);
   top: 0.63em;
 }
 
@@ -808,7 +813,7 @@
 }
 
 .bc-3 {
-  border-bottom: 0.04em solid rgba(0,0,0,0.3);
+  border-bottom: 0.04em solid rgba(0, 0, 0, 0.3);
   top: 0.19em;
 }
 
@@ -854,12 +859,11 @@
   width: 7.6em;
 }
 
-
 /* Spare Tire
    ========================================== */
 .spare-tire {
   background: #ded9d1;
-  background: linear-gradient(to bottom, #fff 50% , #cac4bb 50%);
+  background: linear-gradient(to bottom, #fff 50%, #cac4bb 50%);
   border-radius: 50%;
   box-shadow: 0 0.16em 0 0 rgba(0, 0, 0, 0.15);
   height: 3.6em;
@@ -878,9 +882,6 @@
   top: 0.37em;
   width: 2.86em;
 }
-
-
-
 
 /* ==========================================
    Mirrors
@@ -915,8 +916,7 @@
 
 .mirror-arm {
   background: transparent;
-  box-shadow: 0.04em -0.04em 0 0 #666,
-  0.08em -0.08em 0 0 #ddd;
+  box-shadow: 0.04em -0.04em 0 0 #666, 0.08em -0.08em 0 0 #ddd;
   height: 0.2em;
   border-radius: 0 20% 0 0 / 0 50% 0 0;
   left: 0.52em;
@@ -927,7 +927,7 @@
 
 .mirror-arm:after,
 .mirror-arm:before {
-  background: linear-gradient(to bottom, #ddd 50% , #666 50%);
+  background: linear-gradient(to bottom, #ddd 50%, #666 50%);
   border-radius: 50%;
   content: '';
   height: 0.14em;
@@ -961,8 +961,7 @@
 }
 
 .mirror-arm-r {
-  box-shadow: -0.04em -0.04em 0 0 #666,
-  -0.08em -0.08em 0 0 #ddd;
+  box-shadow: -0.04em -0.04em 0 0 #666, -0.08em -0.08em 0 0 #ddd;
   border-radius: 20% 0 0 0 / 50% 0 0 0;
   left: auto;
   right: 0.52em;
@@ -971,7 +970,7 @@
 
 .mirror-arm-r:after,
 .mirror-arm-r:before {
-  background: linear-gradient(to bottom, #ddd 50% , #666 50%);
+  background: linear-gradient(to bottom, #ddd 50%, #666 50%);
   border-radius: 50%;
   content: '';
   height: 0.14em;
@@ -989,9 +988,6 @@
   top: 0.03em;
 }
 
-
-
-
 /* ==========================================
    Camper Top
    ========================================== */
@@ -1004,8 +1000,7 @@
 .poptop-2 {
   background: transparent;
   border-radius: 50% 50% 0 0 / 50% 50% 0 0;
-  box-shadow: 0 -0.36em 0 0 #ded9d1,
-  0 -0.38em 0 0 #fff;
+  box-shadow: 0 -0.36em 0 0 #ded9d1, 0 -0.38em 0 0 #fff;
   height: 0.7em;
   left: 2.05em;
   top: 0.84em;
@@ -1034,8 +1029,7 @@
 .poptop-1 {
   background: transparent;
   border-radius: 50% 50% 0 0 / 50% 50% 0 0;
-  box-shadow: 0 -0.36em 0 0 #ded9d1,
-  0 -0.4em 0 0 #fff;
+  box-shadow: 0 -0.36em 0 0 #ded9d1, 0 -0.4em 0 0 #fff;
   height: 0.7em;
   left: 1.95em;
   top: 1.1em;
@@ -1064,16 +1058,12 @@
 .poptop-seal {
   background: transparent;
   border-radius: 50% 50% 0 0 / 68% 68% 0 0;
-  box-shadow: 0 -0.1em 0 0 #333,
-  0 -0.18em 0 0 #fff;
+  box-shadow: 0 -0.1em 0 0 #333, 0 -0.18em 0 0 #fff;
   height: 0.7em;
   left: 1.85em;
   top: 1.22em;
   width: 6.3em;
 }
-
-
-
 
 /* ==========================================
    Underbody
@@ -1083,7 +1073,6 @@
   width: 100%;
   z-index: 10;
 }
-
 
 /* Tires
    ========================================== */
@@ -1192,25 +1181,20 @@
   transform: rotate(15deg);
 }
 
-
-
-
 /* ==========================================
    Love Bus
    ========================================== */
 
 .bus--top-love .bus__body--top,
-.bus--bottom-love .bus__body--bottom     {
+.bus--bottom-love .bus__body--bottom {
   background: #008db0;
 }
 
 .bus-flower {
   background-color: #00394e;
-  box-shadow: 0.32em -0.04em 0 0 #00394e,
-  0.06em 0.28em 0 0 #00394e,
-  -0.32em 0.17em 0 0 #00394e,
-  -0.32em -0.24em 0 0 #00394e,
-  0.06em -0.36em 0 0 #00394e;
+  box-shadow: 0.32em -0.04em 0 0 #00394e, 0.06em 0.28em 0 0 #00394e,
+    -0.32em 0.17em 0 0 #00394e, -0.32em -0.24em 0 0 #00394e,
+    0.06em -0.36em 0 0 #00394e;
   border-radius: 50%;
   height: 0.48em;
   width: 0.48em;
@@ -1218,11 +1202,9 @@
 
 .bus-flower:before {
   background-color: #ff9d1e;
-  box-shadow: 0.36em 0 0 0 #ffd322,
-  0.1em 0.32em 0 0 #ffd322,
-  -0.28em 0.21em 0 0 #ffd322,
-  -0.28em -0.2em 0 0 #ffd322,
-  0.10em -0.32em 0 0 #ffd322;
+  box-shadow: 0.36em 0 0 0 #ffd322, 0.1em 0.32em 0 0 #ffd322,
+    -0.28em 0.21em 0 0 #ffd322, -0.28em -0.2em 0 0 #ffd322,
+    0.1em -0.32em 0 0 #ffd322;
   box-sizing: border-box;
   border-radius: 50%;
   border: solid 0.04em #f74f31;
@@ -1232,14 +1214,30 @@
   position: absolute;
 }
 
-.bus-flower--1 { left: 1.38em; top: 6.55em; }
-.bus-flower--2 { left: 2.9em; top: 5.5em; }
-.bus-flower--3 { left: 3.1em; top: 6.45em; }
-.bus-flower--4 { left: 6.4em; top: 5.1em; }
-.bus-flower--5 { left: 6.7em; top: 6.2em; }
-.bus-flower--6 { left: 8.1em; top: 6.5em; }
-
-
+.bus-flower--1 {
+  left: 1.38em;
+  top: 6.55em;
+}
+.bus-flower--2 {
+  left: 2.9em;
+  top: 5.5em;
+}
+.bus-flower--3 {
+  left: 3.1em;
+  top: 6.45em;
+}
+.bus-flower--4 {
+  left: 6.4em;
+  top: 5.1em;
+}
+.bus-flower--5 {
+  left: 6.7em;
+  top: 6.2em;
+}
+.bus-flower--6 {
+  left: 8.1em;
+  top: 6.5em;
+}
 
 .bus-flower-big {
   background-color: #f74f31;
@@ -1370,9 +1368,6 @@
   width: 2.28em;
 }
 
-
-
-
 .bus-shape-a {
   background-color: #00394e;
   border-radius: 50%;
@@ -1388,11 +1383,9 @@
 .bus-shape-a:before {
   background-color: #f74f31;
   border-radius: 50%;
-  box-shadow: 0.28em -0.01em 0 0 #f74f31,
-  0.43em 0.22em 0 0 #f74f31,
-  0.30em 0.47em 0 0 #f74f31,
-  0.03em 0.49em 0 0 #f74f31,
-  -0.12em 0.25em 0 0 #f74f31;
+  box-shadow: 0.28em -0.01em 0 0 #f74f31, 0.43em 0.22em 0 0 #f74f31,
+    0.3em 0.47em 0 0 #f74f31, 0.03em 0.49em 0 0 #f74f31,
+    -0.12em 0.25em 0 0 #f74f31;
   content: '';
   height: 0.26em;
   left: -0.03em;
@@ -1412,19 +1405,46 @@
   width: 0.13em;
 }
 
-.bus-shape-a--2 { left: 1.8em; top: 7.07em; }
-.bus-shape-a--3 { left: 2.5em; top: 7.09em; }
-.bus-shape-a--4 { left: 3.2em; top: 7.1em; }
-.bus-shape-a--5 { left: 3.9em; top: 7.1em; }
-.bus-shape-a--6 { left: 4.7em; top: 7.1em; }
-.bus-shape-a--7 { left: 5.5em; top: 7.1em; }
-.bus-shape-a--8 { left: 6.2em; top: 7.1em; }
-.bus-shape-a--9 { left: 6.9em; top: 7.09em; }
-.bus-shape-a--10 { left: 7.6em; top: 7.07em; }
-.bus-shape-a--11 { left: 8.3em; top: 7.03em; }
-
-
-
+.bus-shape-a--2 {
+  left: 1.8em;
+  top: 7.07em;
+}
+.bus-shape-a--3 {
+  left: 2.5em;
+  top: 7.09em;
+}
+.bus-shape-a--4 {
+  left: 3.2em;
+  top: 7.1em;
+}
+.bus-shape-a--5 {
+  left: 3.9em;
+  top: 7.1em;
+}
+.bus-shape-a--6 {
+  left: 4.7em;
+  top: 7.1em;
+}
+.bus-shape-a--7 {
+  left: 5.5em;
+  top: 7.1em;
+}
+.bus-shape-a--8 {
+  left: 6.2em;
+  top: 7.1em;
+}
+.bus-shape-a--9 {
+  left: 6.9em;
+  top: 7.09em;
+}
+.bus-shape-a--10 {
+  left: 7.6em;
+  top: 7.07em;
+}
+.bus-shape-a--11 {
+  left: 8.3em;
+  top: 7.03em;
+}
 
 .bus-headlight-circle {
   background-color: #00c1d5;
